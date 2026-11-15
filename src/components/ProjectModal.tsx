@@ -60,11 +60,11 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
           <figcaption>{project.cover}</figcaption>
         </figure>
         <div className="project-modal-section"><h3>Project overview</h3><p>{project.overview}</p></div>
-        <div className="project-modal-section"><h3>My contributions</h3>
+        <div className="project-modal-section"><h3>{project.status === "Planned" ? "Planned scope" : "My contributions"}</h3>
           <ul>{project.contributions.map((item) => <li key={item}>{item}</li>)}</ul>
         </div>
         <div className="project-modal-section"><p className="eyebrow">TECHNICAL FOCUS</p><h3>{project.spotlight.title}</h3><p>{project.spotlight.approach}</p></div>
-        <div className="project-modal-section"><h3>What I learned</h3><p>{project.spotlight.takeaway}</p></div>
+        <div className="project-modal-section"><h3>{project.status === "Planned" ? "Learning goals" : "What I learned"}</h3><p>{project.spotlight.takeaway}</p></div>
         <div className="project-modal-section"><h3>Tools & technologies</h3><p>{project.technologies}</p></div>
         <div className="project-modal-section"><h3>Project media</h3>
           <div className="project-media-grid">{project.media.map((media, index) => (

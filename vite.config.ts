@@ -5,6 +5,8 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   plugins: [react()],
   server: {
+    port: 5174,
+    strictPort: true,
     watch: {
       ignored: ['**/.vs/**'],
       // Wait for multi-part saves to finish before transforming source modules.

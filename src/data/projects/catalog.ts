@@ -1,3 +1,4 @@
+import vulkanRenderer from './VulkanRenderer_Future.js';
 import type { Project } from './types.ts';
 import caffeineEngine from './CaffeineEngine_GAM200.js';
 import ekosafe from './EkoSafe_B101.js';
@@ -31,3 +32,5 @@ export const entrepreneurshipProjects: Project[] = [quiknom, ekosafe];
 
 
 
+
+export const futureProjects: Project[] = [vulkanRenderer];
