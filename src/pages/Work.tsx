@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import ProjectModal from "../components/ProjectModal";
-import { projects, type Project } from "../data/projects/index.ts";
+import { projects, hardwareProjects, type Project } from "../data/projects/index.ts";
 
 export default function Work() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
@@ -15,18 +15,18 @@ export default function Work() {
         </h1>
         <p className="page-intro">
           A selection of projects exploring graphics programming,
-          game development, and interactive simulation.
+          game development, interactive simulation, and hardware prototyping.
         </p>
       </header>
 
-      <section className="work-category">
+      {[{ title: "Software & Game Development", items: projects }, { title: "Hardware & IoT", items: hardwareProjects }].map((group) => (<section className="work-category" key={group.title}>
         <div className="work-category-heading">
-          <h2>Software & Game Development</h2>
-          <span>{String(projects.length).padStart(2, "0")} PROJECTS</span>
+          <h2>{group.title}</h2>
+          <span>{String(group.items.length).padStart(2, "0")} PROJECTS</span>
         </div>
 
         <div className="work-project-grid">
-          {projects.map((project, index) => (
+          {group.items.map((project, index) => (
             <button
               type="button"
               className="work-project-card"
@@ -42,7 +42,7 @@ export default function Work() {
                 <div className="work-series-mark">
                   {project.id === "gam200" ? "OOM" :
                    project.id === "gam300" ? "EV" : project.id === "seam-carving" ? "SC" :
-                   "GAM"}
+                   project.id === "cprex" ? "CPR" : project.id === "community-cabinet" ? "IoT" : "GAM"}
                 </div>
                 <span className="card-media-brief">Image placeholder · {project.cover}</span><span className="visual-caption">
                   {project.title}
@@ -63,7 +63,7 @@ export default function Work() {
             </button>
           ))}
         </div>
-      </section>
+      </section>))}
 
       <ProjectModal
         project={selectedProject}
@@ -72,6 +72,7 @@ export default function Work() {
     </section>
   );
 }
+
 
 
 

@@ -1,3 +1,5 @@
+import cprex from './CPRex_Hardware.js';
+import communityCabinet from './SmartCommunityCabinet_FYP.js';
 import seamCarving from './SeamCarving_AlgorithmAnalysis.js';
 import project0 from './OutOfMemory_GAM200.js';
 import project1 from './EvFleetSimulator_GAM300.js';
@@ -24,4 +26,7 @@ export interface Project {
 
 
 export const projects: Project[] = [project0, project1, seamCarving, project2, project3];
+
+
+export const hardwareProjects: Project[] = [cprex, communityCabinet];
 
