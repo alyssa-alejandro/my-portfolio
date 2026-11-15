@@ -1,7 +1,9 @@
+import SoloBadge from '../components/SoloBadge';
+import LeadershipBadge from '../components/LeadershipBadge';
 
 import { useState } from "react";
 import ProjectModal from "../components/ProjectModal";
-import { projects, hardwareProjects, designProjects, entrepreneurshipProjects, type Project } from "../data/projects/index.ts";
+import { gameProjects, softwareProjects, hardwareProjects, designProjects, entrepreneurshipProjects, type Project } from "../data/projects/index.ts";
 
 export default function Work() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
@@ -19,7 +21,7 @@ export default function Work() {
         </p>
       </header>
 
-      {[{ title: "Software & Game Development", items: projects }, { title: "Hardware & IoT", items: hardwareProjects }, { title: "Product Design", items: designProjects }, { title: "Entrepreneurship", items: entrepreneurshipProjects }].map((group) => (<section className="work-category" key={group.title}>
+      {[{ title: "Game Development", items: gameProjects }, { title: "Software Development", items: softwareProjects }, { title: "Hardware & IoT", items: hardwareProjects }, { title: "Product Design", items: designProjects }, { title: "Entrepreneurship", items: entrepreneurshipProjects }].map((group) => (<section className="work-category" key={group.title}>
         <div className="work-category-heading">
           <h2>{group.title}</h2>
           <span>{String(group.items.length).padStart(2, "0")} PROJECTS</span>
@@ -52,6 +54,8 @@ export default function Work() {
               <div className="work-project-body">
                 <p className="eyebrow">{project.category}</p>
                 <h3>{project.title}</h3>
+                {project.leadership && <LeadershipBadge />}
+        {project.solo && <SoloBadge />}
                 <p>{project.description}</p><p className="project-role">{project.role} · {project.status}{project.grade && ` · Grade ${project.grade}`}{project.award && ` · ${project.award}`}</p>
                 <div className="project-tech">
                   {project.technologies}

@@ -1,5 +1,6 @@
 /** @type {import('./index').Project} */
 const project = {
+  leadership: true,
   id: 'community-cabinet', category: 'HARDWARE / IOT FINAL YEAR PROJECT', title: 'Smart Community Cabinet',
   description: 'An IoT food-sharing cabinet prototype connecting barcode-based item entry, cloud records, and electronic cabinet access.',
   role: 'Team Lead · Database & Hardware Contributor', team: 'Republic Polytechnic FYP / five-member team', status: 'Prototype completed',

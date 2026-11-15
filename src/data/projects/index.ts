@@ -15,6 +15,8 @@ export interface Project {
   title: string;
   description: string;
   role: string;
+  leadership?: boolean;
+  solo?: boolean;
   team: string;
   status: string;
   grade?: string;
@@ -30,7 +32,8 @@ export interface Project {
 }
 
 
-export const projects: Project[] = [project0, project1, pythonVision, seamCarving, project2, project3];
+export const gameProjects: Project[] = [project0, project2, project3];
+export const softwareProjects: Project[] = [project1, pythonVision, seamCarving];
 
 
 export const hardwareProjects: Project[] = [cprex, communityCabinet];

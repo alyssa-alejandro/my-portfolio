@@ -2305,3 +2305,35 @@ button {
   .personal-project-arrow { grid-column: 2; grid-row: 2; }
   .personal-project-detail { grid-column: 1 / -1; }
 }
+
+.leadership-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 10px;
+  margin: 4px 0 12px;
+  border: 1px solid #68547f;
+  border-radius: 5px;
+  color: #ddc7fa;
+  background: #c6a7ff0a;
+  font-size: .75rem;
+  line-height: 1.4;
+  font-weight: 500;
+}
+.leadership-badge svg { flex-shrink: 0; }
+
+.solo-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 10px;
+  margin: 4px 0 12px;
+  border: 1px solid #466f73;
+  border-radius: 5px;
+  color: #b7dfdc;
+  background: #b7dfdc0a;
+  font-size: .75rem;
+  line-height: 1.4;
+  font-weight: 500;
+}
+.solo-badge svg { flex-shrink: 0; }

@@ -1,5 +1,6 @@
 /** @type {import('./index').Project} */
 const project = {
+  solo: true,
   id: 'python-3d-vision', category: 'PERSONAL PROJECT / COMPUTER VISION', title: 'Object Detection & 3D Scene Reconstruction',
   description: 'A Python exploration of GPU-assisted object detection and depth-estimated point clouds, with object-to-scene alignment in development.',
   role: 'Personal Project Developer', team: 'Independent project', status: 'In development',

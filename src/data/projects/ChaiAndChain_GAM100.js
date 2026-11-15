@@ -1,5 +1,6 @@
 /** @type {import('./index').Project} */
 const project = {
+  leadership: true,
   id: 'gam100', category: 'GAM100 / PROJECT LEAD & GAMEPLAY', title: 'Chai & Chain',
   description: 'A two-player cooperative cooking game where a connecting chain and spoiling ingredients turn every order into a teamwork challenge.',
   role: 'Project Lead', team: 'Matcha-tea', status: 'Completed',

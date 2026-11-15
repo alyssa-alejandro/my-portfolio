@@ -1,5 +1,6 @@
 /** @type {import('./index').Project} */
 const project = {
+  leadership: true,
   id: 'seam-carving', category: 'ALGORITHM ANALYSIS / GROUP PROJECT', title: 'Seam Carving',
   description: 'A C++ content-aware image resizing project comparing greedy and graph-cut seam selection, with an OpenCV-based image-processing pipeline.',
   role: 'Project Setup & Task Coordination', team: 'Algorithm Analysis project group', status: 'In development',
@@ -25,3 +26,4 @@ const project = {
 };
 
 export default project;
+

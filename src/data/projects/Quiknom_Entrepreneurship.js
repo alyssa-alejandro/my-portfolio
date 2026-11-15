@@ -1,5 +1,6 @@
 /** @type {import('./index').Project} */
 const project = {
+  leadership: true,
   id: 'quiknom', category: 'ENTREPRENEURSHIP / CONCEPT PROTOTYPE', title: 'QUIKNOM',
   description: 'A food-discovery app concept developed for RP’s Entrepreneurship Bootcamp, where our team received the Best Pitch award.',
   role: 'Team Lead', team: 'Republic Polytechnic Entrepreneurship Bootcamp team', status: 'Concept prototype', award: 'Best Pitch', period: '2022',

@@ -1,5 +1,6 @@
 /** @type {import('./index').Project} */
 const project = {
+  solo: true,
   id: 'cprex', category: 'HARDWARE / EMBEDDED PROTOTYPING', title: 'CPRex',
   description: 'A CPR monitoring and feedback practice device developed for a startup during the Entrepreneurship Immersion Programme.',
   role: 'Device Development & Prototyping', team: 'Entrepreneurship Immersion Programme / startup project', status: 'Prototype developed',

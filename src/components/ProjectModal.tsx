@@ -1,3 +1,5 @@
+import SoloBadge from './SoloBadge';
+import LeadershipBadge from './LeadershipBadge';
 import { useEffect, useRef } from 'react';
 import type { Project } from '../data/projects/index.ts';
 
@@ -44,6 +46,8 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
         <button type="button" className="project-modal-close" onClick={onClose} aria-label="Close project details">×</button>
         <p className="eyebrow">{project.category}</p>
         <h2 id="project-modal-title">{project.title}</h2>
+        {project.leadership && <LeadershipBadge />}
+        {project.solo && <SoloBadge />}
         <p className="project-modal-description">{project.description}</p>
         <dl className="project-facts">
           <div><dt>My role</dt><dd>{project.role}</dd></div>

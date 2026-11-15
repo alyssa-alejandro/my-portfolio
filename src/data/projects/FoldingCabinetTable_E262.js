@@ -1,5 +1,6 @@
 /** @type {import('./index').Project} */
 const project = {
+  solo: true,
   id: 'folding-cabinet-table', category: 'E262 / PRODUCT DESIGN & PROTOTYPING', title: 'Product Design and Prototyping Individual Assignment',
   description: 'An individual design study for a fold-away cabinet table, giving users a surface for sorting food items and packing reusable bags.',
   role: 'Individual Product Design', team: 'Individual assignment / Republic Polytechnic', status: 'Completed design study', grade: 'A',
