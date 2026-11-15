@@ -2337,3 +2337,37 @@ button {
   font-weight: 500;
 }
 .solo-badge svg { flex-shrink: 0; }
+
+/* Contact */
+.contact-page { max-width: 1180px; }
+.contact-heading { max-width: 700px; margin-bottom: 48px; }
+.contact-layout { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); gap: 64px; align-items: start; }
+.contact-email-panel { padding: 32px; border: 1px solid var(--border); background: #ffffff03; border-radius: 8px; }
+.contact-email-panel h2 { font-size: 1.65rem; font-weight: 500; letter-spacing: -.025em; margin: 16px 0 20px; }
+.contact-email-address { display: inline-block; font-size: clamp(1rem, 2.2vw, 1.55rem); color: var(--lavender); overflow-wrap: anywhere; border-bottom: 1px solid #68547f; padding-bottom: 5px; }
+.contact-email-panel > p:not(.eyebrow) { font-size: .94rem; line-height: 1.85; color: #bcb6c5; }
+.contact-email-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 20px; margin-top: 24px; }
+.contact-copy { padding: 10px 0; border: 0; border-bottom: 1px solid #77678c; background: transparent; color: inherit; font: inherit; font-size: .85rem; cursor: pointer; }
+.contact-copy-status { min-height: 1.8em; margin: 12px 0 0; font-size: .8rem !important; }
+.contact-socials { margin-top: 36px; }
+.contact-socials > h2, .contact-context h2 { font-size: 1.1rem; font-weight: 500; margin: 0 0 20px; }
+.contact-socials > a { display: flex; justify-content: space-between; align-items: center; gap: 20px; border-top: 1px solid var(--border); padding: 24px 0; }
+.contact-socials > a:last-child { border-bottom: 1px solid var(--border); }
+.contact-socials h3 { margin: 0 0 7px; font-size: 1rem; font-weight: 500; }
+.contact-socials p { margin: 0; color: var(--muted); font-size: .88rem; line-height: 1.7; }
+.contact-socials > a:hover h3 { color: var(--lavender); }
+.contact-context { border-left: 1px solid var(--border); padding: 8px 0 8px 30px; }
+.contact-context dl { margin: 26px 0 30px; }
+.contact-context dl > div { margin-bottom: 22px; }
+.contact-context dt { color: var(--muted); font-size: .75rem; margin-bottom: 7px; }
+.contact-context dd { margin: 0; line-height: 1.8; font-size: .92rem; }
+.contact-context h3 { font-size: .9rem; font-weight: 500; }
+.contact-context ul { padding-left: 18px; color: #bcb6c5; font-size: .88rem; line-height: 1.9; margin-bottom: 24px; }
+.contact-context li { padding-left: 3px; margin-bottom: 8px; }
+.contact-page a:focus-visible, .contact-copy:focus-visible { outline: 2px solid var(--lavender); outline-offset: 5px; }
+@media (max-width: 760px) {
+  .contact-layout { grid-template-columns: 1fr; gap: 36px; }
+  .contact-heading { margin-bottom: 30px; }
+  .contact-email-panel { padding: 24px 20px; }
+  .contact-context { border-left: 0; border-top: 1px solid var(--border); padding: 28px 0 0; }
+}
