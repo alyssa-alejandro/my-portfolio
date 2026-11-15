@@ -7,7 +7,7 @@ The live project content is in the four individual `.js` files in `src/data/proj
 | Project | Cover | Additional media |
 | --- | --- | --- |
 | Out of Memory | Boss encounter with lighting and effects | Existing trailer; 15–30 second VFX/lighting clip; annotated rendering breakdown |
-| EV Fleet Simulator | Fleet map with vehicles and sites | 20–40 second map/3D walkthrough; annotated sphere/cylinder preview; visualisation pipeline diagram |
+| EV Fleet Simulator | Fleet map with vehicles and sites | 20–40 second scenario-map walkthrough; login UI and authentication-flow diagram; annotated scenario-map breakdown |
 | Viral Invaders | Active battle with health bars | Existing trailer; numbered nine-frame event spritesheet; 10–20 second health bar/event clip |
 | Chai & Chain | Both players, chain, and recipe stations | Your promotional trailer; readable ingredient-list screenshot; recipe variation/movement clip |
 
@@ -17,8 +17,9 @@ Use landscape 16:9 covers where possible, and keep UI text readable. Capture rea
 
 - Chai & Chain: the notes conflict between C Processing and Alpha Engine. The page uses C Processing from the detailed project header/overview. Confirm the correct framework.
 - Chai & Chain: verify individual code contributions against available source. Wording currently preserves the notes’ “contributed to” scope.
-- EV Fleet Simulator: marked ongoing, September 2026–April 2027. Playback, scrubbing, restoration, and comparison are described as work in development with integration still being verified.
+- EV Fleet Simulator: marked ongoing, September 2026–April 2027. The portfolio now focuses on database-backed login and the map scenario layer, based on the updated contribution description and a source review. Legacy 3D work is omitted.
 - EV Fleet Simulator: check what team/ST Engineering material can be shared; label mock data and use approved screenshots.
 - Confirm repository URLs and sharing permissions before adding source links. No URLs were provided, so source buttons are omitted.
 - Team sizes and durations for GAM100/150/200 were not supplied and have not been invented.
 - Technical explanations stay within the supplied notes; add precise algorithms, code excerpts, or measured results only when supported by the implementation.
+

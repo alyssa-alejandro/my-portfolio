@@ -126,12 +126,12 @@ export default function Home() {
             <div className="home-project-info">
               <div>
                 <h3>EV Fleet Simulator</h3>
-                <p>Fleet maps and a mock-state 3D visualisation preview.</p>
+                <p>Database-backed login and interactive scenario mapping.</p>
               </div>
               <span className="project-arrow">↗</span>
             </div>
 
-            <p className="project-tech">REACT · JAVASCRIPT · THREE.JS</p>
+            <p className="project-tech">REACT · LEAFLET · POSTGRESQL</p>
           </Link>
 
           <Link to="/work" className="home-project-card">
@@ -200,3 +200,4 @@ export default function Home() {
     </>
   );
 }
+
