@@ -1,3 +1,4 @@
+import ekosafe from './EkoSafe_B101.js';
 import quiknom from './Quiknom_Entrepreneurship.js';
 import foldingTable from './FoldingCabinetTable_E262.js';
 import pythonVision from './Python3DVision_Personal.js';
@@ -43,5 +44,6 @@ export const hardwareProjects: Project[] = [cprex, communityCabinet];
 export const designProjects: Project[] = [foldingTable];
 
 
-export const entrepreneurshipProjects: Project[] = [quiknom];
+export const entrepreneurshipProjects: Project[] = [quiknom, ekosafe];
+
 

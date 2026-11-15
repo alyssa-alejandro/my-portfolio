@@ -56,3 +56,10 @@ Use landscape 16:9 covers where possible, and keep UI text readable. Capture rea
 - Alyssa confirmed she led the group. Confirm the mockup tool and individual design/research responsibilities before adding more specific ownership claims. No recommendation algorithm, backend, bookings, payments, or delivery implementation is claimed.
 
 - QUIKNOM update: 23.pdf contains ready-made meal business exploration, a value proposition canvas, competitor examples, and proposed social media content. It does not name QUIKNOM; the write-up distinguishes these supporting notes from the app mockups. No surveys, campaign results, or individual research authorship are claimed.
+
+## EkoSafe — B101 Entrepreneurship
+
+- Source: AY2022 Semester 2 business plan, submitted 1 February 2023.
+- Report identifies Alyssa as Leader, Marketing; five-member team.
+- Academic concept only: proposed tracking, customisation, recycled materials, pricing, and financials are not verified implementation or operating results.
+- Media: concept/customer board; positioning and marketing summary; business-planning overview. Remove student IDs and contact information from screenshots.
