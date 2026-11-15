@@ -1,6 +1,6 @@
 # Project media and final review
 
-The live project content is in the four individual `.js` files in `src/data/projects/`; the Work page displays it in project dialogs. Each card needs one cover image. Each dialog includes three additional image/video briefs with exact capture instructions.
+The live project content is in the individual `.js` files in `src/data/projects/`; the Work page displays it in project dialogs. Each card needs one cover image. Each dialog includes three additional image/video briefs with exact capture instructions.
 
 ## Asset checklist
 
@@ -22,4 +22,12 @@ Use landscape 16:9 covers where possible, and keep UI text readable. Capture rea
 - Confirm repository URLs and sharing permissions before adding source links. No URLs were provided, so source buttons are omitted.
 - Team sizes and durations for GAM100/150/200 were not supplied and have not been invented.
 - Technical explanations stay within the supplied notes; add precise algorithms, code excerpts, or measured results only when supported by the implementation.
+
+
+## Seam Carving — Algorithm Analysis
+
+- Cover: original image and labeled greedy/graph-cut resized outputs.
+- Media: energy map and seam overlay grid; annotated CMake/vcpkg setup; build and comparison walkthrough with actual timings.
+- Personal contributions: task division and initial CMake/OpenCV project setup. Algorithm implementations are described as team features.
+- Status is provisionally in development; confirm final course code, team name, and completion status when available.
 

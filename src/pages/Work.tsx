@@ -22,7 +22,7 @@ export default function Work() {
       <section className="work-category">
         <div className="work-category-heading">
           <h2>Software & Game Development</h2>
-          <span>04 PROJECTS</span>
+          <span>{String(projects.length).padStart(2, "0")} PROJECTS</span>
         </div>
 
         <div className="work-project-grid">
@@ -40,8 +40,8 @@ export default function Work() {
                   {String(index + 1).padStart(3, "0")}
                 </span>
                 <div className="work-series-mark">
-                  {index === 0 ? "OOM" :
-                   index === 1 ? "EV" :
+                  {project.id === "gam200" ? "OOM" :
+                   project.id === "gam300" ? "EV" : project.id === "seam-carving" ? "SC" :
                    "GAM"}
                 </div>
                 <span className="card-media-brief">Image placeholder · {project.cover}</span><span className="visual-caption">
@@ -72,5 +72,6 @@ export default function Work() {
     </section>
   );
 }
+
 
 
