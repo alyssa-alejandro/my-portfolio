@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 const interests = [
-  'Graphics & Real-Time Rendering', 'Game Development', 'Computer Vision',
+  'Software Development', 'Game Development', 'Computer Vision', 'Graphics Programming',
   'Simulation & Visualisation', 'Embedded Systems & IoT', 'Product Design',
 ];
 
@@ -86,8 +86,8 @@ export default function About() {
           Polytechnic, where I graduated with merit in 2024. Working on
           hardware prototypes and community projects introduced me to
           product design, entrepreneurship, and team leadership. Today,
-          I'm building on that foundation through graphics programming,
-          game development, simulation, and computer vision.
+          I'm building on that foundation through software development,
+          games, simulation, and computer vision.
         </p>
       </header>
 

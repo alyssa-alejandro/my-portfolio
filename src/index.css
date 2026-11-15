@@ -2371,3 +2371,7 @@ button {
   .contact-email-panel { padding: 24px 20px; }
   .contact-context { border-left: 0; border-top: 1px solid var(--border); padding: 28px 0 0; }
 }
+
+.logo { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; font-size: .9rem; font-weight: 600; }
+.logo > span { display: none; }
+.logo small { font-size: .62rem; font-weight: 400; letter-spacing: .12em; color: var(--muted); }

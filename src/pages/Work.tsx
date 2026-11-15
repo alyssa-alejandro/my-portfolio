@@ -16,8 +16,8 @@ export default function Work() {
           Things I've <span>built.</span>
         </h1>
         <p className="page-intro">
-          A selection of projects exploring graphics programming,
-          game development, interactive simulation, and hardware prototyping.
+          Projects in software and game development, hardware,
+          product design, and entrepreneurship.
         </p>
       </header>
 

@@ -11,7 +11,7 @@ function Navbar() {
     <header className="navbar">
       <Link to="/" className="logo">
         ALYSSA NICOLE ALEJANDRO<span>.</span>
-        <small>GRAPHICS LAB / 001</small>
+        <small>PERSONAL PORTFOLIO</small>
       </Link>
 
       <nav className="nav-links">
@@ -57,8 +57,8 @@ function App() {
         </main>
 
         <footer className="site-footer">
-          <p>ALYSSA NICOLE ALEJANDRO · GRAPHICS LAB / 001</p>
-          <p>Built with curiosity and code.</p>
+          <p>ALYSSA NICOLE ALEJANDRO</p>
+          <p>Software, hardware, and the projects in between.</p>
         </footer>
       </div>
     </BrowserRouter>

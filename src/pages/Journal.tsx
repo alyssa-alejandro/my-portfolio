@@ -39,8 +39,8 @@ const entries = [
     description:
       'Building an interactive interface for exploring a live fleet simulation.',
     detail:
-      'Working on live visualisation, playback controls, time scrubbing, snapshot restoration, and simulation metrics.',
-    meta: 'REACT · TYPESCRIPT · THREE.JS',
+      'Working on database-backed login and the map scenario layer for a team project with ST Engineering.',
+    meta: 'REACT · LEAFLET · POSTGRESQL',
     date: 'IN PROGRESS',
   },
   {
@@ -60,13 +60,13 @@ const entries = [
     id: 5,
     category: 'Projects' as Category,
     icon: '◇',
-    label: 'LOW-LEVEL RENDERING',
-    title: 'Vulkan Renderer',
+    label: 'COMPUTER VISION',
+    title: 'Python 3D Vision',
     description:
-      'An ongoing exploration of graphics programming and real-time rendering.',
+      'Exploring object detection, relative-depth estimation, and point-cloud visualisation.',
     detail:
-      'A personal graphics project focused on learning Vulkan and building a stronger understanding of rendering pipelines.',
-    meta: 'C++ · VULKAN · GRAPHICS',
+      'Combining pretrained YOLO detection with Depth Anything V2 and Open3D. Aligning detections with the reconstructed scene is still in progress.',
+    meta: 'PYTHON · OPENCV · OPEN3D',
     date: 'IN PROGRESS',
   },
 ];

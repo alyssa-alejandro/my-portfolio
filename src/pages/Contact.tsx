@@ -50,7 +50,7 @@ export default function Contact() {
           <h2 id="contact-context-title">A little context</h2>
           <dl><div><dt>Based in</dt><dd>Singapore · UTC+8</dd></div><div><dt>Currently</dt><dd>Studying Computer Science at SIT–DigiPen<br />Graduating in 2028</dd></div></dl>
           <h3>I'd enjoy talking about</h3>
-          <ul><li>Internships and opportunities to learn</li><li>Graphics, games, and simulation</li><li>Software, hardware, and product ideas</li><li>Collaborations and community projects</li></ul>
+          <ul><li>Internships and opportunities to learn</li><li>Games, computer vision, and simulation</li><li>Software, hardware, and product ideas</li><li>Collaborations and community projects</li></ul>
           <Link to="/work" className="personal-link">Take a look at my work <span aria-hidden="true">↗</span></Link>
         </aside>
       </div>
