@@ -7,6 +7,11 @@ export default defineConfig({
   server: {
     watch: {
       ignored: ['**/.vs/**'],
+      // Wait for multi-part saves to finish before transforming source modules.
+      awaitWriteFinish: {
+        stabilityThreshold: 500,
+        pollInterval: 100,
+      },
     },
   },
 })

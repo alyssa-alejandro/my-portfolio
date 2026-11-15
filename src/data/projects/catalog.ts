@@ -19,14 +19,15 @@ export const gameProjects: Project[] = [caffeineEngine, project0, project2, proj
 export const softwareProjects: Project[] = [project1, pythonVision, seamCarving];
 
 
-export const hardwareProjects: Project[] = [cprex, communityCabinet];
+export const hardwareProjects: Project[] = [cprex, communityCabinet, foldingTable];
 
 
 
-export const designProjects: Project[] = [foldingTable];
+
 
 
 export const entrepreneurshipProjects: Project[] = [quiknom, ekosafe];
+
 
 
 

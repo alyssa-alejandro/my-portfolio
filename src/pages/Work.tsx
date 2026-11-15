@@ -4,7 +4,7 @@ import LeadershipBadge from '../components/LeadershipBadge';
 
 import { useState } from "react";
 import ProjectModal from "../components/ProjectModal";
-import { gameProjects, softwareProjects, hardwareProjects, designProjects, entrepreneurshipProjects } from "../data/projects/catalog.ts";
+import { gameProjects, softwareProjects, hardwareProjects, entrepreneurshipProjects } from "../data/projects/catalog.ts";
 
 export default function Work() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
@@ -22,7 +22,7 @@ export default function Work() {
         </p>
       </header>
 
-      {[{ title: "Game Development", items: gameProjects }, { title: "Software Development", items: softwareProjects }, { title: "Hardware & IoT", items: hardwareProjects }, { title: "Product Design", items: designProjects }, { title: "Entrepreneurship", items: entrepreneurshipProjects }].map((group) => (<section className="work-category" key={group.title}>
+      {[{ title: "Game Development", items: gameProjects }, { title: "Software Development", items: softwareProjects }, { title: "Hardware & IoT", items: hardwareProjects }, { title: "Entrepreneurship", items: entrepreneurshipProjects }].map((group) => (<section className="work-category" key={group.title}>
         <div className="work-category-heading">
           <h2>{group.title}</h2>
           <span>{String(group.items.length).padStart(2, "0")} PROJECTS</span>
@@ -77,6 +77,7 @@ export default function Work() {
     </section>
   );
 }
+
 
 
 
