@@ -2239,3 +2239,69 @@ button {
 .about-experience-list { display: grid; gap: 24px; margin: 24px 0; }
 .about-experience-list h3 { margin: 0 0 8px; font-size: 1.1rem; }
 .about-experience-list .about-description { margin: 0; }
+
+/* Personal homepage */
+.personal-home { max-width: 1180px; margin: 0 auto; padding: 0 44px; }
+.personal-intro { padding: 96px 0 76px; }
+.personal-kicker { color: var(--muted); font-size: .78rem; letter-spacing: .12em; margin: 0 0 28px; }
+.personal-intro h1 { font-size: clamp(2.7rem, 5.8vw, 5rem); line-height: 1.13; font-weight: 500; letter-spacing: -.045em; margin: 0; }
+.personal-intro h1 span { color: #bcb2ca; }
+.personal-intro-bottom { display: grid; grid-template-columns: 1.7fr 1fr; gap: 100px; margin-top: 40px; }
+.personal-intro-copy p, .personal-background p, .personal-contact p { font-size: 1.02rem; line-height: 1.85; color: #bcb6c5; margin: 0 0 18px; }
+.personal-link { display: inline-flex; align-items: center; gap: 15px; font-size: .9rem; padding: 8px 0; border-bottom: 1px solid #77678c; width: fit-content; }
+.personal-link:hover { color: var(--lavender); border-color: var(--lavender); }
+.personal-now { border-left: 1px solid var(--border); padding: 0 0 0 26px; align-self: start; }
+.personal-now h2 { font-size: .88rem; font-weight: 500; margin: 0 0 14px; }
+.personal-now p { color: #bcb6c5; line-height: 1.8; font-size: .93rem; margin: 0 0 14px; }
+.personal-now > span { color: var(--muted); font-size: .8rem; }
+.personal-work { padding: 40px 0 64px; }
+.personal-section-heading { display: flex; justify-content: space-between; align-items: center; gap: 24px; margin-bottom: 26px; }
+.personal-section-heading h2, .personal-background h2, .personal-contact h2 { font-size: 1.5rem; font-weight: 500; letter-spacing: -.025em; margin: 0; }
+.personal-project { display: grid; grid-template-columns: 1fr 1.25fr auto; gap: 42px; padding: 32px 0; border-top: 1px solid var(--border); }
+.personal-project:last-child { border-bottom: 1px solid var(--border); }
+.personal-project-name > p { font-size: .74rem; color: var(--muted); margin: 0 0 10px; line-height: 1.6; }
+.personal-project h3 { font-size: 1.35rem; letter-spacing: -.02em; font-weight: 500; margin: 0; }
+.personal-project-detail p { color: #bcb6c5; margin: 0 0 15px; line-height: 1.8; font-size: .95rem; }
+.personal-project-detail > span { color: var(--muted); font-size: .77rem; }
+.personal-project-arrow { font-size: 1.3rem; color: var(--muted); }
+.personal-project:hover h3, .personal-project:hover .personal-project-arrow { color: var(--lavender); }
+.personal-background { display: grid; grid-template-columns: 1fr 1.55fr; gap: 70px; padding: 30px 0 72px; }
+.personal-contact { border-top: 1px solid var(--border); padding: 42px 0 65px; display: flex; justify-content: space-between; gap: 35px; align-items: center; }
+.personal-contact p { margin: 12px 0 0; font-size: .93rem; max-width: 48ch; }
+.personal-home a:focus-visible { outline: 2px solid var(--lavender); outline-offset: 6px; }
+@media (max-width: 760px) {
+  .personal-home { padding: 0 24px; }
+  .personal-intro { padding: 60px 0 36px; }
+  .personal-intro-bottom { grid-template-columns: 1fr; gap: 32px; margin-top: 30px; }
+  .personal-now { max-width: 48ch; }
+  .personal-project { grid-template-columns: 1fr auto; gap: 18px; padding: 26px 0; }
+  .personal-project-detail { grid-column: 1; }
+  .personal-project-arrow { grid-column: 2; grid-row: 1; }
+  .personal-background { grid-template-columns: 1fr; gap: 22px; padding: 12px 0 45px; }
+  .personal-contact { align-items: start; flex-direction: column; gap: 20px; padding-bottom: 45px; }
+  .personal-section-heading h2 { font-size: 1.3rem; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* Homepage image slots: replace empty paths in Home.tsx when photos are ready. */
+.home-image { width: 100%; aspect-ratio: 16 / 9; overflow: hidden; background: #ffffff03; border: 1px dashed #51495d; }
+.home-image img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.home-image-placeholder { height: 100%; display: flex; flex-direction: column; justify-content: center; padding: 22px; }
+.home-image-placeholder > span { color: var(--muted); font-size: .65rem; letter-spacing: .12em; }
+.home-image-placeholder > p { font-size: .8rem; color: #bcb6c5; line-height: 1.7; margin: 12px 0 0; }
+.home-image-portrait { aspect-ratio: 4 / 5; max-width: 290px; }
+.personal-intro-aside { display: grid; gap: 26px; align-content: start; }
+.personal-project { grid-template-columns: 210px 1fr 1.25fr auto; gap: 28px; align-items: center; }
+@media (max-width: 1000px) and (min-width: 761px) {
+  .personal-project { grid-template-columns: 170px 1fr auto; }
+  .personal-project-detail { grid-column: 2; }
+  .personal-project > .home-image { grid-row: 1 / 3; }
+  .personal-project-arrow { grid-column: 3; grid-row: 1; }
+}
+@media (max-width: 760px) {
+  .personal-project { grid-template-columns: 1fr auto; gap: 18px; }
+  .personal-project > .home-image { grid-column: 1 / -1; grid-row: 1; }
+  .personal-project-name { grid-column: 1; grid-row: 2; }
+  .personal-project-arrow { grid-column: 2; grid-row: 2; }
+  .personal-project-detail { grid-column: 1 / -1; }
+}

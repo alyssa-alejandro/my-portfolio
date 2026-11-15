@@ -1,203 +1,81 @@
-
 import { Link } from 'react-router-dom';
 
-export default function Home() {
+// Add images to public/images/home, then fill in the paths below.
+const portrait = { src: '', alt: 'Alyssa Nicole Alejandro', brief: 'A portrait of you, or a candid photo working on a project. Portrait orientation, 4:5.' };
+
+function HomeImage({ src, alt, brief, portrait = false }: { src: string; alt: string; brief: string; portrait?: boolean }) {
   return (
-    <>
-      <section className="home-hero">
-        <div className="hero-copy">
-          <p className="eyebrow">
-            COMPUTER SCIENCE · REAL-TIME GRAPHICS
-          </p>
-
-          <h1>
-            I build systems,
-            <br />
-            experiences, and
-            <br />
-            <span>things worth exploring.</span>
-          </h1>
-
-          <p className="hero-description">
-            I'm Alyssa, a computer science student exploring graphics
-            programming, real-time rendering, and interactive systems.
-          </p>
-
-          <div className="hero-actions">
-            <Link to="/work" className="primary-button">
-              Explore my work <span>↗</span>
-            </Link>
-
-            <Link to="/about" className="secondary-button">
-              More about me
-            </Link>
-          </div>
-
-          <div className="hero-status">
-            <span className="status-dot" />
-            <span>BUILDING THINGS, ONE FRAME AT A TIME</span>
-          </div>
-        </div>
-
-        <div className="hero-art">
-          <div className="art-topline">
-            <span>GRAPHICS LAB / 001</span>
-            <span>REAL-TIME EXPERIMENT</span>
-          </div>
-
-          <div className="art-scene">
-            <div className="scene-grid" />
-            <div className="orbit orbit-one" />
-            <div className="orbit orbit-two" />
-            <div className="orbit orbit-three" />
-            <div className="scene-sphere" />
-            <div className="scene-crosshair crosshair-one">+</div>
-            <div className="scene-crosshair crosshair-two">+</div>
-            <span className="scene-label label-top">X: 0.024</span>
-            <span className="scene-label label-bottom">RENDER / 001</span>
-          </div>
-
-          <div className="art-bottomline">
-            <span>EXPERIMENTAL VISUALS</span>
-            <span>01 — 03</span>
-          </div>
-        </div>
-
-        <div className="hero-index">
-          <span>01</span>
-          <span className="index-line" />
-          <span>HOME</span>
-        </div>
-      </section>
-
-      <section className="home-featured">
-        <div className="section-heading">
-          <div>
-            <p className="eyebrow">01 / SELECTED WORK</p>
-            <h2>Ideas made tangible.</h2>
-          </div>
-
-          <Link to="/work" className="text-link">
-            View all projects ↗
-          </Link>
-        </div>
-
-        <p className="section-description">
-          A selection of projects spanning graphics programming,
-          simulation, and interactive systems.
-        </p>
-
-        <div className="home-project-grid">
-          <Link to="/work" className="home-project-card">
-            <div className="project-visual project-visual-game">
-              <span className="visual-index">PROJECT / 001</span>
-              <div className="game-visual-shape">
-                <span />
-                <span />
-                <span />
-              </div>
-              <span className="visual-caption">GAME GRAPHICS</span>
-            </div>
-
-            <div className="home-project-info">
-              <div>
-                <h3>Out of Memory</h3>
-                <p>Rendering, shaders, lighting, and visual effects.</p>
-              </div>
-              <span className="project-arrow">↗</span>
-            </div>
-
-            <p className="project-tech">C++ · OPENGL · GLSL</p>
-          </Link>
-
-          <Link to="/work" className="home-project-card">
-            <div className="project-visual project-visual-simulation">
-              <span className="visual-index">PROJECT / 002</span>
-              <div className="simulation-lines">
-                <span />
-                <span />
-                <span />
-                <span />
-                <span />
-              </div>
-              <span className="visual-caption">LIVE SIMULATION</span>
-            </div>
-
-            <div className="home-project-info">
-              <div>
-                <h3>EV Fleet Simulator</h3>
-                <p>Database-backed login and interactive scenario mapping.</p>
-              </div>
-              <span className="project-arrow">↗</span>
-            </div>
-
-            <p className="project-tech">REACT · LEAFLET · POSTGRESQL</p>
-          </Link>
-
-          <Link to="/work" className="home-project-card">
-            <div className="project-visual project-visual-vulkan">
-              <span className="visual-index">PROJECT / 003</span>
-              <div className="vulkan-cube">
-                <div />
-                <div />
-                <div />
-              </div>
-              <span className="visual-caption">LOW-LEVEL RENDERING</span>
-            </div>
-
-            <div className="home-project-info">
-              <div>
-                <h3>Vulkan Renderer</h3>
-                <p>An ongoing exploration of real-time rendering.</p>
-              </div>
-              <span className="project-arrow">↗</span>
-            </div>
-
-            <p className="project-tech">C++ · VULKAN · GRAPHICS</p>
-          </Link>
-        </div>
-      </section>
-
-      <section className="home-about-preview">
-        <div>
-          <p className="eyebrow">02 / A LITTLE ABOUT ME</p>
-          <h2>
-            Curious about
-            <br />
-            <span>how things work.</span>
-          </h2>
-        </div>
-
-        <div className="about-preview-copy">
-          <p>
-            I'm studying Computer Science in Real-Time Interactive
-            Simulation at SIT–DigiPen. I enjoy understanding what happens
-            beneath the surface — from rendering pipelines and shaders
-            to the systems that bring interactive experiences to life.
-          </p>
-
-          <Link to="/about" className="text-link">
-            Get to know me ↗
-          </Link>
-        </div>
-      </section>
-
-      <section className="home-contact">
-        <p className="eyebrow">03 / WHAT'S NEXT?</p>
-        <h2>
-          Let's build
-          <br />
-          something <span>interesting.</span>
-        </h2>
-        <p>
-          Always learning, always experimenting. Have a project or
-          opportunity in mind?
-        </p>
-        <Link to="/contact" className="primary-button">
-          Get in touch <span>↗</span>
-        </Link>
-      </section>
-    </>
+    <div className={portrait ? 'home-image home-image-portrait' : 'home-image'}>
+      {src ? <img src={src} alt={alt} /> : <div className="home-image-placeholder"><span>IMAGE TO ADD</span><p>{brief}</p></div>}
+    </div>
   );
 }
 
+const selectedWork = [
+  {
+    name: 'Out of Memory', type: 'Team game · Graphics programming',
+    description: 'Rendering, cameras, lighting, and visual effects for a boss-combat game built in our own C++ engine.',
+    tools: 'C++ / OpenGL', image: '', alt: 'Out of Memory boss encounter', imageBrief: 'Gameplay screenshot with a boss, lighting, and effects visible. Landscape, 16:9.',
+  },
+  {
+    name: 'EV Fleet Simulator', type: 'Industry collaboration · In progress',
+    description: 'Database-backed login and the map scenario layer for a fleet simulation project with ST Engineering.',
+    tools: 'React / Leaflet / PostgreSQL', image: '', alt: 'EV Fleet Simulator scenario map', imageBrief: 'Scenario map showing vehicles, depots, and controls. Use shareable demo data. Landscape, 16:9.',
+  },
+  {
+    name: 'CPRex', type: 'Startup project · Hardware prototype',
+    description: 'A CPR monitoring and feedback practice device I developed during my entrepreneurship immersion programme.',
+    tools: 'Arduino UNO / C / Fusion 360', image: '', alt: 'CPRex practice device prototype', imageBrief: 'Photo of the assembled CPRex device in its practice setup. Landscape, 16:9.',
+  },
+];
+
+export default function Home() {
+  return (
+    <div className="personal-home">
+      <section className="personal-intro" aria-labelledby="home-title">
+        <p className="personal-kicker">ALYSSA NICOLE ALEJANDRO</p>
+        <h1 id="home-title">Hi, I'm Alyssa.<br /><span>I like figuring out<br className="intro-break" /> how things work.</span></h1>
+        <div className="personal-intro-bottom">
+          <div className="personal-intro-copy">
+            <p>I'm a computer science student at SIT–DigiPen, graduating in 2028. I work on games, graphics, and simulation, with a background in engineering and hardware prototyping.</p>
+            <p>I've gone from building a CPR practice device to working on a custom game engine. I enjoy the part where an idea becomes something I can test, take apart, and improve.</p>
+            <Link to="/work" className="personal-link">See my projects <span aria-hidden="true">↗</span></Link>
+          </div>
+          <div className="personal-intro-aside">
+          <HomeImage {...portrait} portrait />
+          <aside className="personal-now" aria-label="Current projects">
+            <h2>On my desk lately</h2>
+            <p>An EV fleet simulator with ST Engineering, and a Python project that turns photographs into estimated 3D point clouds.</p>
+            <span>Both are still in progress.</span>
+          </aside>
+          </div>
+        </div>
+      </section>
+
+      <section className="personal-work" aria-labelledby="selected-title">
+        <div className="personal-section-heading"><h2 id="selected-title">A few projects</h2><Link to="/work" className="personal-link">All projects <span aria-hidden="true">↗</span></Link></div>
+        <div className="personal-project-list">
+          {selectedWork.map((project) => (
+            <Link to="/work" className="personal-project" key={project.name}>
+              <HomeImage src={project.image} alt={project.alt} brief={project.imageBrief} />
+              <div className="personal-project-name"><p>{project.type}</p><h3>{project.name}</h3></div>
+              <div className="personal-project-detail"><p>{project.description}</p><span>{project.tools}</span></div>
+              <span className="personal-project-arrow" aria-hidden="true">↗</span>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <section className="personal-background" aria-labelledby="background-title">
+        <h2 id="background-title">Before the code</h2>
+        <div>
+          <p>I studied Engineering Design with Business at Republic Polytechnic, graduating with merit in 2024. There, I led our Smart Community Cabinet FYP and discovered how much I enjoy working across software and physical design.</p>
+          <p>Outside projects, I've been involved in Youth Corps and student event publicity. I also read a lot of mystery and thriller novels, and I'm working towards writing a book of my own.</p>
+          <Link to="/about" className="personal-link">More about me <span aria-hidden="true">↗</span></Link>
+        </div>
+      </section>
+
+      <section className="personal-contact" aria-labelledby="contact-title"><div><h2 id="contact-title">Want to get in touch?</h2><p>I'm happy to talk about projects, opportunities, or something you're working on.</p></div><Link to="/contact" className="personal-link">Say hello <span aria-hidden="true">↗</span></Link></section>
+    </div>
+  );
+}
