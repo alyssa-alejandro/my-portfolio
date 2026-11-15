@@ -1,35 +1,24 @@
+import { Link } from 'react-router-dom';
 
 const interests = [
-  "Real-time Rendering",
-  "Graphics Programming",
-  "Shader Programming",
-  "Lighting & Visual Effects",
-  "Interactive Systems",
-  "Simulation",
+  'Graphics & Real-Time Rendering', 'Game Development', 'Computer Vision',
+  'Simulation & Visualisation', 'Embedded Systems & IoT', 'Product Design',
 ];
 
 const toolkit = [
-  {
-    category: "Languages",
-    skills: ["C++", "C", "C#", "Python", "JavaScript"],
-  },
-  {
-    category: "Graphics",
-    skills: ["OpenGL", "GLSL", "GLFW", "GLM", "ImGui"],
-  },
-  {
-    category: "Frameworks & Tools",
-    skills: [
-      "React",
-      "React Three Fiber",
-      "Git",
-      "Visual Studio",
-    ],
-  },
-  {
-    category: "Design & Hardware",
-    skills: ["Fusion 360", "Arduino", "Raspberry Pi"],
-  },
+  { category: 'Languages', skills: ['C++', 'C', 'C#', 'Python', 'JavaScript'] },
+  { category: 'Graphics & Games', skills: ['OpenGL', 'GLSL', 'GLFW', 'GLM', 'ImGui', 'DigiPen Game Frameworks'] },
+  { category: 'Web & Data', skills: ['React', 'Leaflet', 'Node.js', 'PostgreSQL', 'Vite'] },
+  { category: 'Computer Vision', skills: ['OpenCV', 'YOLO', 'OpenVINO', 'Depth Anything V2', 'Open3D', 'NumPy'] },
+  { category: 'Build & Development', skills: ['CMake', 'vcpkg', 'Git', 'Visual Studio'] },
+  { category: 'Design & Hardware', skills: ['Fusion 360', 'Arduino UNO', 'Raspberry Pi', 'ThingSpeak'] },
+];
+
+const experience = [
+  { title: 'Games and real-time graphics', text: 'My game projects have taken me from C gameplay programming and project leadership in Chai & Chain to animation systems and health bars in Viral Invaders. In Out of Memory, I contributed to rendering, camera systems, lighting, and VFX within our team’s custom C++ and OpenGL engine.' },
+  { title: 'Simulation and connected applications', text: 'For the ongoing EV Fleet Simulator with ST Engineering, I work on database-backed login and the map scenario layer. This connects React interfaces with account data, scenario state, and a map-based view of fleet operations.' },
+  { title: 'Computer vision and algorithm analysis', text: 'My ongoing Python project explores pretrained object detection, relative-depth estimation, and point-cloud visualisation. For a group seam-carving project, I divided tasks and established the CMake and OpenCV setup supporting the team’s algorithm comparisons.' },
+  { title: 'Hardware with a practical purpose', text: 'During the Entrepreneurship Immersion Programme, I developed CPRex, a CPR monitoring and feedback practice prototype for a startup, using Arduino UNO, C, and Fusion 360. For my Smart Community Cabinet FYP, I led a five-member team and contributed to the database, hardware, and electronic lock for an IoT food-sharing prototype.' },
 ];
 
 const education = [
@@ -53,7 +42,7 @@ const awards = [
   {
     year: "4 SEMESTERS",
     title: "Director's Roll of Honour",
-    detail: "Recognised among the top 10% of the cohort.",
+    detail: "Awarded for four consecutive semesters at Republic Polytechnic.",
   },
   {
     year: "AY2022",
@@ -71,6 +60,8 @@ const awards = [
     year: "AY2023",
     title: "M.A.D. Service-Learning Leader Award",
   },
+  { year: 'RP', title: 'Engineering in Community Award' },
+  { year: 'TOP 10', title: 'iDare Competition Finalist', detail: 'Republic Polytechnic entrepreneurship competition.' },
 ];
 
 export default function About() {
@@ -85,23 +76,36 @@ export default function About() {
         </h1>
 
         <p className="page-intro">
-          I'm Alyssa, a Computer Science student at SIT–DigiPen
-          specialising in Real-Time Interactive Simulation.
-          I'm interested in graphics programming, real-time
-          rendering, and the systems that bring interactive
-          worlds to life.
+          Hello, I'm Alyssa, a Computer Science student in Real-Time
+          Interactive Simulation at SIT–DigiPen, graduating in 2028.
+          I enjoy understanding how systems work and building experiences
+          that connect code, visuals, and the physical world.
         </p>
-
         <p className="about-description">
-          Through game development, I've worked with C++,
-          OpenGL, and GLSL to explore rendering, camera
-          systems, lighting, and visual effects. I'm
-          continuing to deepen my understanding of graphics
-          through hands-on projects and experimentation.
+          My background is in Engineering Design with Business at Republic
+          Polytechnic, where I graduated with merit in 2024. Working on
+          hardware prototypes and community projects introduced me to
+          product design, entrepreneurship, and team leadership. Today,
+          I'm building on that foundation through graphics programming,
+          game development, simulation, and computer vision.
         </p>
       </header>
 
       <div className="about-content">
+        <article className="about-block">
+          <p className="eyebrow">EXPERIENCE / FROM SOFTWARE TO HARDWARE</p>
+          <h2>What I've been building.</h2>
+          <div className="about-experience-list">
+            {experience.map((item) => (
+              <div key={item.title}>
+                <h3>{item.title}</h3>
+                <p className="about-description">{item.text}</p>
+              </div>
+            ))}
+          </div>
+          <Link to="/work" className="text-link">Explore the projects ↗</Link>
+        </article>
+
         {/* Interests */}
         <article className="about-block">
           <p className="eyebrow">01 / INTERESTS</p>
@@ -216,6 +220,14 @@ export default function About() {
             experiences that bring people together.
           </p>
 
+          <p className="about-description">
+            I participated in the Entrepreneurship Immersion Programme and
+            Youth Corps Leaders Programme in 2024. I've also managed and
+            created social media content for IGNITE 2022, orientation
+            programmes, and student leadership camps. Leading project teams
+            and supporting these events has taught me to communicate ideas,
+            coordinate work, and keep the people using a product in mind.
+          </p>
           <div className="leadership-list">
             {/* Youth Corps Singapore */}
             <div className="leadership-card">

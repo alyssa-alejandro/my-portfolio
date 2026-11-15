@@ -2235,3 +2235,7 @@ button {
   .project-facts { grid-template-columns: 1fr; }
   .media-placeholder { padding: 20px; }
 }
+
+.about-experience-list { display: grid; gap: 24px; margin: 24px 0; }
+.about-experience-list h3 { margin: 0 0 8px; font-size: 1.1rem; }
+.about-experience-list .about-description { margin: 0; }
