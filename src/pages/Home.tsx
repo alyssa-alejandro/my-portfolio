@@ -126,12 +126,12 @@ export default function Home() {
             <div className="home-project-info">
               <div>
                 <h3>EV Fleet Simulator</h3>
-                <p>Interactive simulation visualisation and playback.</p>
+                <p>Fleet maps and a mock-state 3D visualisation preview.</p>
               </div>
               <span className="project-arrow">↗</span>
             </div>
 
-            <p className="project-tech">REACT · TYPESCRIPT · THREE.JS</p>
+            <p className="project-tech">REACT · JAVASCRIPT · THREE.JS</p>
           </Link>
 
           <Link to="/work" className="home-project-card">

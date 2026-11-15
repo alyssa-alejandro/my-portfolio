@@ -2215,3 +2215,23 @@ button {
     padding: 32px 22px;
   }
 }
+
+/* Project case studies and media briefs */
+.project-modal { width: min(900px, 100%); }
+.project-modal > h2 { padding-right: 30px; font-size: clamp(2rem, 5vw, 3rem); margin: 12px 0; }
+.project-modal-section p { line-height: 1.8; }
+.project-facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; margin: 28px 0; }
+.project-facts dt { font-size: .75rem; text-transform: uppercase; letter-spacing: .08em; opacity: .65; margin-bottom: 6px; }
+.project-facts dd { margin: 0; line-height: 1.5; }
+.media-placeholder { margin: 0; padding: 26px; border: 1px dashed #777; border-radius: 8px; background: #ffffff06; }
+.media-placeholder h4 { margin: 16px 0 10px; font-size: 1.1rem; }
+.media-placeholder figcaption { line-height: 1.7; color: #c3c3c3; }
+.cover-placeholder { min-height: 180px; display: flex; flex-direction: column; justify-content: center; gap: 16px; }
+.project-media-grid { display: grid; gap: 16px; }
+.card-media-brief { font-size: .8rem; line-height: 1.6; max-width: 48ch; color: #bdbdbd; margin: 12px 0; }
+.project-role { font-size: .8rem; opacity: .8; }
+@media (max-width: 480px) {
+  .project-modal-overlay { padding: 10px; }
+  .project-facts { grid-template-columns: 1fr; }
+  .media-placeholder { padding: 20px; }
+}

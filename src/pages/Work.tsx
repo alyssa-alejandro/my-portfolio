@@ -1,70 +1,7 @@
 
 import { useState } from "react";
 import ProjectModal from "../components/ProjectModal";
-import type { Project } from "../components/ProjectModal";
-
-const projects: Project[] = [
-  {
-    id: "gam200",
-    category: "GAM200 / GRAPHICS PROGRAMMING",
-    title: "Out of Memory",
-    description:
-      "A team-developed game built with C++ and OpenGL, featuring custom rendering systems, shaders, lighting, and visual effects.",
-    contributions: [
-      "Developed and contributed to graphics and rendering systems.",
-      "Worked on shaders, lighting, particles, and visual effects.",
-      "Contributed to camera, transformation, texture, and shader management.",
-    ],
-    technologies: "C++ · OpenGL · GLSL · GLFW · ImGui",
-    media: "",
-    github: "",
-  },
-  {
-    id: "gam300",
-    category: "GAM300 / SIMULATION & VISUALIZATION",
-    title: "EV Fleet Simulator",
-    description:
-      "An EV fleet simulation and visualization project developed with ST Engineering.",
-    contributions: [
-      "Implemented real-time 2D fleet map visualization.",
-      "Worked on vehicle interpolation and playback controls.",
-      "Contributed to simulation scrubbing, snapshots, and live updates.",
-    ],
-    technologies: "React · Three.js · React Three Fiber · Vite",
-    media: "",
-    github: "",
-  },
-  {
-    id: "gam150",
-    category: "GAM150 / GAME DEVELOPMENT",
-    title: "Viral Invaders",
-    description:
-      "A game development project created using C++ and DigiPen's custom Alpha Engine.",
-    contributions: [
-      "Add your actual gameplay and programming contributions.",
-    ],
-    technologies: "C++ · Alpha Engine",
-    media: "",
-    github: "",
-  },
-  {
-    id: "gam100",
-    category: "GAM100 / PROJECT LEAD",
-    title: "Chai & Chain",
-    description:
-      "A two-player cooperative cooking game featuring ingredient transfers, time-sensitive recipes, and chain-constrained movement.",
-    contributions: [
-      "Implemented recipe randomisation.",
-      "Created an ingredient list displaying ingredient names and images.",
-      "Implemented player movement.",
-      "Led team discussions, planning, and brainstorming.",
-      "Created the promotional trailer.",
-    ],
-    technologies: "C · Alpha Engine",
-    media: "Gameplay footage and promotional trailer.",
-    github: "",
-  },
-];
+import { projects, type Project } from "../data/projects/index.ts";
 
 export default function Work() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
@@ -107,7 +44,7 @@ export default function Work() {
                    index === 1 ? "EV" :
                    "GAM"}
                 </div>
-                <span className="visual-caption">
+                <span className="card-media-brief">Image placeholder · {project.cover}</span><span className="visual-caption">
                   {project.title}
                 </span>
               </div>
@@ -115,7 +52,7 @@ export default function Work() {
               <div className="work-project-body">
                 <p className="eyebrow">{project.category}</p>
                 <h3>{project.title}</h3>
-                <p>{project.description}</p>
+                <p>{project.description}</p><p className="project-role">{project.role} · {project.status}</p>
                 <div className="project-tech">
                   {project.technologies}
                 </div>
@@ -135,3 +72,5 @@ export default function Work() {
     </section>
   );
 }
+
+

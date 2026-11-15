@@ -1,0 +1,24 @@
+# Project media and final review
+
+The live project content is in the four individual `.js` files in `src/data/projects/`; the Work page displays it in project dialogs. Each card needs one cover image. Each dialog includes three additional image/video briefs with exact capture instructions.
+
+## Asset checklist
+
+| Project | Cover | Additional media |
+| --- | --- | --- |
+| Out of Memory | Boss encounter with lighting and effects | Existing trailer; 15–30 second VFX/lighting clip; annotated rendering breakdown |
+| EV Fleet Simulator | Fleet map with vehicles and sites | 20–40 second map/3D walkthrough; annotated sphere/cylinder preview; visualisation pipeline diagram |
+| Viral Invaders | Active battle with health bars | Existing trailer; numbered nine-frame event spritesheet; 10–20 second health bar/event clip |
+| Chai & Chain | Both players, chain, and recipe stations | Your promotional trailer; readable ingredient-list screenshot; recipe variation/movement clip |
+
+Use landscape 16:9 covers where possible, and keep UI text readable. Capture real project footage. Caption each contribution clearly and credit team work. The on-page boxes are editorial placeholders, not uploaded media or working video players; replace them with image/video elements when assets are ready.
+
+## Confirm before final publication
+
+- Chai & Chain: the notes conflict between C Processing and Alpha Engine. The page uses C Processing from the detailed project header/overview. Confirm the correct framework.
+- Chai & Chain: verify individual code contributions against available source. Wording currently preserves the notes’ “contributed to” scope.
+- EV Fleet Simulator: marked ongoing, September 2026–April 2027. Playback, scrubbing, restoration, and comparison are described as work in development with integration still being verified.
+- EV Fleet Simulator: check what team/ST Engineering material can be shared; label mock data and use approved screenshots.
+- Confirm repository URLs and sharing permissions before adding source links. No URLs were provided, so source buttons are omitted.
+- Team sizes and durations for GAM100/150/200 were not supplied and have not been invented.
+- Technical explanations stay within the supplied notes; add precise algorithms, code excerpts, or measured results only when supported by the implementation.
