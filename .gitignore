@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Visual Studio temporary files
+.vs/
+
+# Dependencies and build output
+node_modules/
+dist/
