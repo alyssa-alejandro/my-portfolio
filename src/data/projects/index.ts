@@ -1,3 +1,4 @@
+import foldingTable from './FoldingCabinetTable_E262.js';
 import pythonVision from './Python3DVision_Personal.js';
 import cprex from './CPRex_Hardware.js';
 import communityCabinet from './SmartCommunityCabinet_FYP.js';
@@ -15,6 +16,7 @@ export interface Project {
   role: string;
   team: string;
   status: string;
+  grade?: string;
   period?: string;
   overview: string;
   contributions: string[];
@@ -31,4 +33,7 @@ export const projects: Project[] = [project0, project1, pythonVision, seamCarvin
 
 export const hardwareProjects: Project[] = [cprex, communityCabinet];
 
+
+
+export const designProjects: Project[] = [foldingTable];
 

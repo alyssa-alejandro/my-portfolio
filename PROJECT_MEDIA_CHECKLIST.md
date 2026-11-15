@@ -39,3 +39,11 @@ Use landscape 16:9 covers where possible, and keep UI text readable. Capture rea
 - Current source review: pointcloud.py uses multi_objects.jpg, while object_3d.py still uses capture.jpg. Input consistency and depth-map coordinate alignment require further integration work.
 - Describe pretrained-model integration, not model training. Relative depth is uncalibrated; fixed-size boxes do not represent measured object extents.
 - Live detection targets an Intel GPU through OpenVINO. The inspected depth pipeline uses CPU. Do not describe the full pipeline as GPU accelerated or live 3D reconstruction.
+
+## Product Design and Prototyping Individual Assignment — E262
+
+- Individual Product Design and Prototyping assignment, grade A as supplied by Alyssa.
+- Media: open/folded CAD views, dimensioned details, and mechanism comparison. Pages 2–4 of E262 GA.pdf provide context.
+- Described as a design study. Fabrication, load tests, and safety validation have not been established.
+- CAD software is not specified: the report references a Fusion 360 hinge tutorial but does not explicitly identify the tool used for all modelling.
+
