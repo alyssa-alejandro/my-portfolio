@@ -1,3 +1,4 @@
+import pythonVision from './Python3DVision_Personal.js';
 import cprex from './CPRex_Hardware.js';
 import communityCabinet from './SmartCommunityCabinet_FYP.js';
 import seamCarving from './SeamCarving_AlgorithmAnalysis.js';
@@ -25,8 +26,9 @@ export interface Project {
 }
 
 
-export const projects: Project[] = [project0, project1, seamCarving, project2, project3];
+export const projects: Project[] = [project0, project1, pythonVision, seamCarving, project2, project3];
 
 
 export const hardwareProjects: Project[] = [cprex, communityCabinet];
+
 

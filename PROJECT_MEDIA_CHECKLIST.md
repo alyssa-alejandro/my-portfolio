@@ -31,3 +31,11 @@ Use landscape 16:9 covers where possible, and keep UI text readable. Capture rea
 - Personal contributions: task division and initial CMake/OpenCV project setup. Algorithm implementations are described as team features.
 - Status is provisionally in development; confirm final course code, team name, and completion status when available.
 
+
+## Python Object Detection and 3D Scene Reconstruction
+
+- Cover: matched detection image and point-cloud view from the same photograph.
+- Media: webcam detection clip; source/depth/point-cloud comparison; marker alignment clip once verified.
+- Current source review: pointcloud.py uses multi_objects.jpg, while object_3d.py still uses capture.jpg. Input consistency and depth-map coordinate alignment require further integration work.
+- Describe pretrained-model integration, not model training. Relative depth is uncalibrated; fixed-size boxes do not represent measured object extents.
+- Live detection targets an Intel GPU through OpenVINO. The inspected depth pipeline uses CPU. Do not describe the full pipeline as GPU accelerated or live 3D reconstruction.

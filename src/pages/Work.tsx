@@ -41,7 +41,7 @@ export default function Work() {
                 </span>
                 <div className="work-series-mark">
                   {project.id === "gam200" ? "OOM" :
-                   project.id === "gam300" ? "EV" : project.id === "seam-carving" ? "SC" :
+                   project.id === "gam300" ? "EV" : project.id === "seam-carving" ? "SC" : project.id === "python-3d-vision" ? "CV" :
                    project.id === "cprex" ? "CPR" : project.id === "community-cabinet" ? "IoT" : "GAM"}
                 </div>
                 <span className="card-media-brief">Image placeholder · {project.cover}</span><span className="visual-caption">
@@ -72,6 +72,7 @@ export default function Work() {
     </section>
   );
 }
+
 
 
 
