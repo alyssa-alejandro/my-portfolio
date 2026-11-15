@@ -1,4 +1,4 @@
-/** @type {import('./index').Project} */
+/** @type {import('./types').Project} */
 const project = {
   solo: true,
   id: 'cprex', category: 'HARDWARE / EMBEDDED PROTOTYPING', title: 'CPRex',

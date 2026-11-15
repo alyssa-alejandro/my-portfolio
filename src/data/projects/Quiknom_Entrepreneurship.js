@@ -1,4 +1,4 @@
-/** @type {import('./index').Project} */
+/** @type {import('./types').Project} */
 const project = {
   leadership: true,
   id: 'quiknom', category: 'ENTREPRENEURSHIP / CONCEPT PROTOTYPE', title: 'QUIKNOM',

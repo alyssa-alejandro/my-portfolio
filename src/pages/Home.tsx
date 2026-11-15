@@ -13,9 +13,9 @@ function HomeImage({ src, alt, brief, portrait = false }: { src: string; alt: st
 
 const selectedWork = [
   {
-    name: 'Out of Memory', type: 'Team game · Graphics programming',
-    description: 'Rendering, cameras, lighting, and visual effects for a boss-combat game built in our own C++ engine.',
-    tools: 'C++ / OpenGL', image: '', alt: 'Out of Memory boss encounter', imageBrief: 'Gameplay screenshot with a boss, lighting, and effects visible. Landscape, 16:9.',
+    name: 'Out of Memory', type: 'Team game · Visual effects',
+    description: 'Door and player particle effects, plus transitions, for a boss-combat game built with our team’s Caffeine Engine.',
+    tools: 'C++ / Caffeine Engine', image: '', alt: 'Out of Memory boss encounter', imageBrief: 'Gameplay screenshot with a boss, lighting, and effects visible. Landscape, 16:9.',
   },
   {
     name: 'EV Fleet Simulator', type: 'Industry collaboration · In progress',

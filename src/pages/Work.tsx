@@ -1,9 +1,10 @@
+import type { Project } from '../data/projects/types.ts';
 import SoloBadge from '../components/SoloBadge';
 import LeadershipBadge from '../components/LeadershipBadge';
 
 import { useState } from "react";
 import ProjectModal from "../components/ProjectModal";
-import { gameProjects, softwareProjects, hardwareProjects, designProjects, entrepreneurshipProjects, type Project } from "../data/projects/index.ts";
+import { gameProjects, softwareProjects, hardwareProjects, designProjects, entrepreneurshipProjects } from "../data/projects/catalog.ts";
 
 export default function Work() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
@@ -42,7 +43,7 @@ export default function Work() {
                   {String(index + 1).padStart(3, "0")}
                 </span>
                 <div className="work-series-mark">
-                  {project.id === "gam200" ? "OOM" :
+                  {project.id === "gam200" ? "OOM" : project.id === "caffeine-engine" ? "CE" :
                    project.id === "gam300" ? "EV" : project.id === "seam-carving" ? "SC" : project.id === "python-3d-vision" ? "CV" :
                    project.id === "cprex" ? "CPR" : project.id === "community-cabinet" ? "IoT" : project.id === "folding-cabinet-table" ? "E262" : project.id === "quiknom" ? "QN" : project.id === "ekosafe" ? "EKO" : "GAM"}
                 </div>

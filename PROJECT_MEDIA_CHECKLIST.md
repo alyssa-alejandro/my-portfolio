@@ -63,3 +63,10 @@ Use landscape 16:9 covers where possible, and keep UI text readable. Capture rea
 - Report identifies Alyssa as Leader, Marketing; five-member team.
 - Academic concept only: proposed tracking, customisation, recycled materials, pricing, and financials are not verified implementation or operating results.
 - Media: concept/customer board; positioning and marketing summary; business-planning overview. Remove student IDs and contact information from screenshots.
+
+## GAM200 split: Caffeine Engine and Out of Memory
+
+- Caffeine Engine appears under Game Development: rendering, window management, camera, lighting, and debugging.
+- Out of Memory remains under Game Development: selected game VFX only. Confirmed effects: door particles, transitions, and player particles.
+- Record separate engine-system and game-VFX demonstrations. A scene may appear in both if captions distinguish engine infrastructure from effects and credit shared assets.
+

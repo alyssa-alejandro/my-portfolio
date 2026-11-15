@@ -1,26 +1,26 @@
-/** @type {import('./index').Project} */
+/** @type {import('./types').Project} */
 const project = {
-  id: 'gam200', category: 'GAM200 / GRAPHICS PROGRAMMING', title: 'Out of Memory',
+  id: 'gam200', category: 'GAM200 / GAME VFX', title: 'Out of Memory',
   description: 'A narrative action game with two boss encounters, built in a team-developed C++ and OpenGL engine.',
-  role: 'Graphics & Rendering Programmer', team: 'FueledByCaffiene', status: 'Completed',
-  technologies: 'C++ · Lua · OpenGL · GLSL · GLM · GLFW',
+  role: 'VFX Contributor', team: 'FueledByCaffiene', status: 'Completed',
+  technologies: 'C++ · Caffeine Engine',
   cover: 'Capture a boss encounter with the player, environment, lighting, and effects visible.',
   overview: 'A struggling game developer is pulled into a game after a car accident. Across two stages, the player faces a car boss and a traffic light boss, using melee and ranged attacks, stamina management, dodging, and environmental cover. Each victory awards a token and brings the protagonist closer to an emotional conclusion.',
   contributions: [
-    'Rendering and graphics — Contributed to the render pipeline, graphics setup, and window management in Caffeine Engine, our team’s custom engine.',
-    'Camera system — Worked with transformations to control the camera’s position and view of the scene.',
-    'VFX and lighting — Contributed to the visual effects and lighting systems that support the game’s visual presentation.',
-    'Debugging and display consistency — Traced crashes to potentially problematic commits, investigated an animation-related crash, troubleshot resolution differences across PCs, and fixed development warnings.',
+    'Door particle effects — Implemented particle effects for doors in the game.',
+    'Transitions — Implemented transition effects for the game.',
+    'Player particle effects — Implemented particle effects for the player.',
+    'Team collaboration — Contributed my VFX work within a team-developed action game built on Caffeine Engine.',
   ],
   spotlight: {
-    title: 'Rendering within a custom engine',
-    approach: 'Working in a team-built engine meant developing graphics systems alongside the game. My work connected scene rendering, camera transformations, window setup, and visual effects. I also investigated regressions through commit history and troubleshot how the game appeared at different resolutions.',
-    takeaway: 'I gained experience contributing to a custom OpenGL engine and understanding how rendering, camera behaviour, and display handling affect the final game.',
+    title: 'Visual effects in the game',
+    approach: 'My game-side contributions were door particle effects, transitions, and player particle effects. This entry covers those effects in their gameplay context; the underlying rendering, camera, window, and lighting systems are described separately in the Caffeine Engine project.',
+    takeaway: 'I gained experience applying graphics-related work in a playable team project and considering how visual effects appear within the game scene.',
   },
   media: [
     { kind: 'Video', title: 'Gameplay trailer', brief: 'Add the existing trailer. Include both boss encounters, dodging, and environmental cover so viewers can understand the game quickly.' },
-    { kind: 'Video', title: 'VFX and lighting showcase', brief: 'Use your existing contribution recording. Select 15–30 seconds where lighting or effects are clearly visible; caption the systems you worked on.' },
-    { kind: 'Image', title: 'Rendering breakdown', brief: 'Capture one scene and annotate the camera view, lighting, and effects you contributed to. Add a relevant code excerpt only after checking authorship and whether it can be shared.' },
+    { kind: 'Video', title: 'My VFX showcase', brief: 'Use your existing contribution recording. Show door particle effects, a transition, and player particle effects in a short sequence. Label each contribution and keep enough gameplay context to make it readable.' },
+    { kind: 'Image', title: 'Effect breakdown', brief: 'Capture a door or player particle effect, or a sequence of transition frames, and annotate the visible behaviour. Add a relevant code excerpt if shareable. Include a before/after comparison only if you have a genuine matching capture.' },
   ],
 };
 

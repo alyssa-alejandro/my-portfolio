@@ -1,7 +1,7 @@
 import SoloBadge from './SoloBadge';
 import LeadershipBadge from './LeadershipBadge';
 import { useEffect, useRef } from 'react';
-import type { Project } from '../data/projects/index.ts';
+import type { Project } from '../data/projects/types.ts';
 
 interface ProjectModalProps {
   project: Project | null;

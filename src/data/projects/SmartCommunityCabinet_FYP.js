@@ -1,4 +1,4 @@
-/** @type {import('./index').Project} */
+/** @type {import('./types').Project} */
 const project = {
   leadership: true,
   id: 'community-cabinet', category: 'HARDWARE / IOT FINAL YEAR PROJECT', title: 'Smart Community Cabinet',

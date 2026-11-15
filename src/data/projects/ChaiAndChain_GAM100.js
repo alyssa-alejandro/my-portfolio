@@ -1,4 +1,4 @@
-/** @type {import('./index').Project} */
+/** @type {import('./types').Project} */
 const project = {
   leadership: true,
   id: 'gam100', category: 'GAM100 / PROJECT LEAD & GAMEPLAY', title: 'Chai & Chain',

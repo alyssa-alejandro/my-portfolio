@@ -8,13 +8,13 @@ const entries = [
     id: 1,
     category: 'Projects' as Category,
     icon: '⌘',
-    label: 'GRAPHICS PROGRAMMING',
+    label: 'GAME VFX',
     title: 'Out of Memory',
     description:
-      'A team game where I contributed to rendering systems, shaders, lighting, and visual effects.',
+      'A team-developed boss-combat game where I implemented door and player particle effects, plus transitions.',
     detail:
-      'My graphics programming work includes camera and rendering systems, shader development, lighting, particles, transitions, and player visual effects.',
-    meta: 'C++ · OPENGL · GLSL',
+      'My game-side work covers door particle effects, transitions, and player particle effects. My rendering, camera, and lighting contributions are covered separately in Caffeine Engine.',
+    meta: 'C++ · CAFFEINE ENGINE',
     date: 'PROJECT ARCHIVE',
   },
   {

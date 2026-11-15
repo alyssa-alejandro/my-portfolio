@@ -1,4 +1,4 @@
-/** @type {import('./index').Project} */
+/** @type {import('./types').Project} */
 const project = {
   solo: true,
   id: 'python-3d-vision', category: 'PERSONAL PROJECT / COMPUTER VISION', title: 'Object Detection & 3D Scene Reconstruction',

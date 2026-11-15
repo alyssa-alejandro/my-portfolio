@@ -1,4 +1,4 @@
-/** @type {import('./index').Project} */
+/** @type {import('./types').Project} */
 const project = {
   leadership: true,
   id: 'seam-carving', category: 'ALGORITHM ANALYSIS / GROUP PROJECT', title: 'Seam Carving',

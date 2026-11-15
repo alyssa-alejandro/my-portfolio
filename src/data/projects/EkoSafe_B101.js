@@ -1,4 +1,4 @@
-/** @type {import('./index').Project} */
+/** @type {import('./types').Project} */
 const project = {
   id: 'ekosafe', category: 'B101 / ENTREPRENEURSHIP BUSINESS PLAN', title: 'EkoSafe',
   leadership: true,

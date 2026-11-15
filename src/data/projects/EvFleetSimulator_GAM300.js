@@ -1,4 +1,4 @@
-/** @type {import('./index').Project} */
+/** @type {import('./types').Project} */
 const project = {
   id: 'gam300', category: 'GAM300 / AUTHENTICATION & MAP VISUALISATION', title: 'EV Fleet Simulator',
   description: 'An ongoing EV fleet simulator with ST Engineering, featuring database-backed login and an interactive scenario map.',

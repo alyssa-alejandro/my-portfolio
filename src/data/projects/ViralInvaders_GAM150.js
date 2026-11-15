@@ -1,4 +1,4 @@
-/** @type {import('./index').Project} */
+/** @type {import('./types').Project} */
 const project = {
   id: 'gam150', category: 'GAM150 / GAMEPLAY & ANIMATION', title: 'Viral Invaders',
   description: 'A reverse tower-defence game where players deploy viruses and adapt to changing battlefield conditions.',
