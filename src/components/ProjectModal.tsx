@@ -49,7 +49,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
           <div><dt>My role</dt><dd>{project.role}</dd></div>
           <div><dt>Team</dt><dd>{project.team}</dd></div>
           <div><dt>Status</dt><dd>{project.status}</dd></div>{project.grade && <div><dt>Assignment grade</dt><dd>{project.grade}</dd></div>}
-          {project.period && <div><dt>Project period</dt><dd>{project.period}</dd></div>}
+          {project.award && <div><dt>Team recognition</dt><dd>{project.award}</dd></div>}{project.period && <div><dt>Project period</dt><dd>{project.period}</dd></div>}
         </dl>
         <figure className="media-placeholder cover-placeholder">
           <span className="eyebrow">Image placeholder / project cover</span>
@@ -75,5 +75,6 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
     </div>
   );
 }
+
 
 

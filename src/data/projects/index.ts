@@ -1,3 +1,4 @@
+import quiknom from './Quiknom_Entrepreneurship.js';
 import foldingTable from './FoldingCabinetTable_E262.js';
 import pythonVision from './Python3DVision_Personal.js';
 import cprex from './CPRex_Hardware.js';
@@ -17,6 +18,7 @@ export interface Project {
   team: string;
   status: string;
   grade?: string;
+  award?: string;
   period?: string;
   overview: string;
   contributions: string[];
@@ -36,4 +38,7 @@ export const hardwareProjects: Project[] = [cprex, communityCabinet];
 
 
 export const designProjects: Project[] = [foldingTable];
+
+
+export const entrepreneurshipProjects: Project[] = [quiknom];
 

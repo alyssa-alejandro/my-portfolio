@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import ProjectModal from "../components/ProjectModal";
-import { projects, hardwareProjects, designProjects, type Project } from "../data/projects/index.ts";
+import { projects, hardwareProjects, designProjects, entrepreneurshipProjects, type Project } from "../data/projects/index.ts";
 
 export default function Work() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
@@ -19,7 +19,7 @@ export default function Work() {
         </p>
       </header>
 
-      {[{ title: "Software & Game Development", items: projects }, { title: "Hardware & IoT", items: hardwareProjects }, { title: "Product Design", items: designProjects }].map((group) => (<section className="work-category" key={group.title}>
+      {[{ title: "Software & Game Development", items: projects }, { title: "Hardware & IoT", items: hardwareProjects }, { title: "Product Design", items: designProjects }, { title: "Entrepreneurship", items: entrepreneurshipProjects }].map((group) => (<section className="work-category" key={group.title}>
         <div className="work-category-heading">
           <h2>{group.title}</h2>
           <span>{String(group.items.length).padStart(2, "0")} PROJECTS</span>
@@ -42,7 +42,7 @@ export default function Work() {
                 <div className="work-series-mark">
                   {project.id === "gam200" ? "OOM" :
                    project.id === "gam300" ? "EV" : project.id === "seam-carving" ? "SC" : project.id === "python-3d-vision" ? "CV" :
-                   project.id === "cprex" ? "CPR" : project.id === "community-cabinet" ? "IoT" : project.id === "folding-cabinet-table" ? "E262" : "GAM"}
+                   project.id === "cprex" ? "CPR" : project.id === "community-cabinet" ? "IoT" : project.id === "folding-cabinet-table" ? "E262" : project.id === "quiknom" ? "QN" : "GAM"}
                 </div>
                 <span className="card-media-brief">Image placeholder · {project.cover}</span><span className="visual-caption">
                   {project.title}
@@ -52,7 +52,7 @@ export default function Work() {
               <div className="work-project-body">
                 <p className="eyebrow">{project.category}</p>
                 <h3>{project.title}</h3>
-                <p>{project.description}</p><p className="project-role">{project.role} · {project.status}{project.grade && ` · Grade ${project.grade}`}</p>
+                <p>{project.description}</p><p className="project-role">{project.role} · {project.status}{project.grade && ` · Grade ${project.grade}`}{project.award && ` · ${project.award}`}</p>
                 <div className="project-tech">
                   {project.technologies}
                 </div>
@@ -72,6 +72,7 @@ export default function Work() {
     </section>
   );
 }
+
 
 
 

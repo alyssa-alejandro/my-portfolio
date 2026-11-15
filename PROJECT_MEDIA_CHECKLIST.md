@@ -47,3 +47,12 @@ Use landscape 16:9 covers where possible, and keep UI text readable. Capture rea
 - Described as a design study. Fabrication, load tests, and safety validation have not been established.
 - CAD software is not specified: the report references a Fusion 360 hinge tutorial but does not explicitly identify the tool used for all modelling.
 
+
+## QUIKNOM — RP Entrepreneurship Bootcamp
+
+- Team concept prototype; Best Pitch recognition and 2022 date supplied by Alyssa.
+- Source: eight-page QUIKNOM PDF containing app mockups, not a full pitch deck or implementation.
+- Media: food-discovery flow, restaurant/booking screens, and team/award photo if available.
+- Alyssa confirmed she led the group. Confirm the mockup tool and individual design/research responsibilities before adding more specific ownership claims. No recommendation algorithm, backend, bookings, payments, or delivery implementation is claimed.
+
+- QUIKNOM update: 23.pdf contains ready-made meal business exploration, a value proposition canvas, competitor examples, and proposed social media content. It does not name QUIKNOM; the write-up distinguishes these supporting notes from the app mockups. No surveys, campaign results, or individual research authorship are claimed.
