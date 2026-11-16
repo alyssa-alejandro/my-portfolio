@@ -1,5 +1,6 @@
 /** @type {import('./types').Project} */
 const project = {
+  github: 'https://github.com/behsty/seam-carving27',
   summary: "Content-aware resizing: team algorithm analysis with a shared C++ build setup.",
   highlights: ["Split tasks and established the CMake/OpenCV build workflow.","Integrated vcpkg dependencies, source discovery, and asset copying."],
   leadership: true,

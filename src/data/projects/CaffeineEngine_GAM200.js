@@ -1,5 +1,6 @@
 /** @type {import('./types').Project} */
 const project = {
+  github: 'https://github.com/alyssa-alejandro/GAM200_FueledByCaffeine',
   summary: "Custom C++ engine: rendering, cameras, lighting, and team coordination.",
   highlights: ["Contributed rendering, camera, lighting, and window systems in OpenGL.","Monitored crashes and helped teammates work around unstable builds.","Coordinated milestone submissions and compiled playtest feedback."],
   leadership: true,

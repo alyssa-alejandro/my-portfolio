@@ -54,6 +54,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
           {project.award && <span className="project-result-badge">★ {project.award}</span>}
         </div>
         <p className="project-modal-description">{project.summary || project.description}</p>
+        {project.github && <a className="project-repo-link" href={project.github} target="_blank" rel="noopener noreferrer">View repository ↗</a>}
         <dl className="project-facts">
           <div><dt>My role</dt><dd>{project.role}</dd></div>
           <div><dt>Team</dt><dd>{project.team}</dd></div>
@@ -122,7 +123,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
         <div className="project-modal-section"><h3>{project.status === "Planned" ? "Learning goals" : "What I learned"}</h3><p>{project.spotlight.takeaway}</p></div>
         <div className="project-modal-section"><h3>Tools & technologies</h3><p>{project.technologies}</p></div>
         </details>
-        {project.github && <a href={project.github} target="_blank" rel="noreferrer">View source code ↗</a>}
+
       </section>
     </div>
   );

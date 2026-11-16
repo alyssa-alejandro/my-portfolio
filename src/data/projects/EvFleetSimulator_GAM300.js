@@ -1,5 +1,6 @@
 /** @type {import('./types').Project} */
 const project = {
+  github: 'https://github.com/weijieng-dp/ev-fleet-simulator',
   summary: "EV fleet simulation with Upsight. My focus: login and scenario mapping.",
   highlights: ["Implemented PostgreSQL-backed login and account-access feedback.","Developed the map scenario layer connecting fleet and site data."],
   id: 'gam300', category: 'GAM300 / AUTHENTICATION & MAP VISUALISATION', title: 'EV Fleet Simulator',

@@ -2460,3 +2460,7 @@ button {
 .about-award-photo { margin: 28px 0 16px; }
 .about-award-photo img { display: block; width: 100%; max-height: 480px; object-fit: contain; object-position: left; border-radius: 8px; }
 @media (max-width: 600px) { .about-community-gallery { grid-template-columns: 1fr; } }
+
+.project-repo-link { display: inline-flex; margin: 4px 0 8px; padding: 10px 14px; border: 1px solid #68547f; border-radius: 5px; color: var(--lavender); font-size: .85rem; }
+.project-repo-link:hover { background: #c6a7ff0c; }
+.project-repo-link:focus-visible { outline: 2px solid var(--lavender); outline-offset: 4px; }
