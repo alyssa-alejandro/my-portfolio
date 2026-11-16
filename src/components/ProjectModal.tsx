@@ -69,7 +69,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
         <div className="project-modal-section"><h3>Tools & technologies</h3><p>{project.technologies}</p></div>
         <div className="project-modal-section"><h3>Project media</h3>
           <div className="project-media-grid">{project.media.map((media, index) => (
-            <figure className={media.youtubeId ? 'project-video' : media.src ? 'project-image' : 'media-placeholder'} key={media.title}>
+            <figure className={media.youtubeId ? 'project-video' : (media.src || media.images) ? 'project-image' : 'media-placeholder'} key={media.title}>
               {media.youtubeId ? (
                 <>
                   <h4>{media.title}</h4>
@@ -82,6 +82,17 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                     allowFullScreen
                   />
                   <figcaption>{media.brief} <a href={`https://youtu.be/${media.youtubeId}`} target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a></figcaption>
+                </>
+              ) : media.images ? (
+                <>
+                  <h4>{media.title}</h4>
+                  <div className="project-image-pair">{media.images.map((item) => (
+                    <div key={item.src}>
+                      <p>{item.label}</p>
+                      <a href={item.src} target="_blank" rel="noopener noreferrer" aria-label={`Open full-size ${item.label}`}><img src={item.src} alt={item.alt} loading="lazy" /></a>
+                    </div>
+                  ))}</div>
+                  <figcaption>{media.brief}</figcaption>
                 </>
               ) : media.src ? (
                 <>

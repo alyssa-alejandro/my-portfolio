@@ -18,6 +18,6 @@ export interface Project {
   cover: string;
   coverImage?: string;
   coverAlt?: string;
-  media: { title: string; kind: 'Image' | 'Video'; brief: string; youtubeId?: string; src?: string; alt?: string }[];
+  media: { title: string; kind: 'Image' | 'Video'; brief: string; youtubeId?: string; src?: string; alt?: string; images?: { src: string; alt: string; label: string }[] }[];
   github?: string;
 }

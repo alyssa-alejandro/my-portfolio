@@ -5,7 +5,9 @@ const project = {
   description: 'An individual design study for a fold-away cabinet table, giving users a surface for sorting food items and packing reusable bags.',
   role: 'Individual Product Design', team: 'Individual assignment / Republic Polytechnic', status: 'Completed design study', grade: 'A',
   technologies: 'CAD Modelling · Mechanism Research · Design Documentation',
-  cover: 'Show the table design attached to the cabinet, with the triangular support and hinge arrangement visible. Use the CAD view from page 3 of the report or a clearer original export.',
+  cover: 'CAD view of the foldable table attached to the cabinet, showing the tabletop hinges and triangular support.',
+  coverImage: '/images/works/e262/foldable%20table.png',
+  coverAlt: 'CAD view of a cabinet-mounted foldable table with three tabletop hinges and a hinged triangular support underneath.',
   overview: 'For E262 Product Design and Prototyping at Republic Polytechnic, I explored a folding side table for a cabinet storing non-perishable food. The design provides a surface for placing bags and sorting items, then folds away when not needed. My individual report compares support mechanisms and explains the dimensions, material choice, hinge arrangement, appearance, and safety considerations. I received an A for this assignment.',
   contributions: [
     'Mechanism research — Compared folding, scissor-style, leg-supported, and locking-hinge table arrangements before selecting a hinged table with a folding triangular support.',
@@ -19,6 +21,7 @@ const project = {
     takeaway: 'This assignment helped me connect mechanism research with practical design decisions, from fitting a table to the available space to explaining how users would open, use, and store it.',
   },
   media: [
+    { kind: 'Image', title: 'Foldable table design', src: '/images/works/e262/foldable%20table.png', alt: 'Deployed foldable tabletop supported by a triangular bracket, with hinges connecting it to the cabinet.', brief: 'My E262 table design in the deployed position. The CAD view shows the tabletop hinges and triangular support intended to fold against the cabinet when not in use.' },
     { kind: 'Image', title: 'Open and folded positions', brief: 'Place CAD views of the deployed and folded table side by side. Label the tabletop, hinges, and triangular support, and show how the design sits against the cabinet. Use original CAD exports if available.' },
     { kind: 'Image', title: 'Dimensions and user details', brief: 'Add a dimensioned view showing the 670 × 340 mm tabletop, 250 × 250 mm support, and 100 × 50 mm bag slot. Include a close-up of the rounded corners. Present dimensions as design specifications.' },
     { kind: 'Image', title: 'Mechanism selection', brief: 'Summarise the support options researched on page 2 and explain the selected folding arrangement. Distinguish reference examples from your own design; credit reference images if reused.' },
