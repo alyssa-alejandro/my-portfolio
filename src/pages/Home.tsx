@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 // Add images to public/images/home, then fill in the paths below.
-const portrait = { src: '', alt: 'Alyssa Nicole Alejandro', brief: 'A portrait of you, or a candid photo working on a project. Portrait orientation, 4:5.' };
+const portrait = { src: '/images/home/home.jpg', alt: 'Alyssa Nicole Alejandro', brief: 'A portrait of you, or a candid photo working on a project. Portrait orientation, 4:5.' };
 
 function HomeImage({ src, alt, brief, portrait = false }: { src: string; alt: string; brief: string; portrait?: boolean }) {
   return (
@@ -79,3 +79,4 @@ export default function Home() {
     </div>
   );
 }
+

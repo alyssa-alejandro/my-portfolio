@@ -6,11 +6,11 @@ const interests = [
 ];
 
 const toolkit = [
-  { category: 'Languages', skills: ['C++', 'C', 'C#', 'Python', 'JavaScript'] },
+  { category: 'Languages', skills: ['C++', 'C', 'C#', 'Python', 'JavaScript', 'Lua'] },
   { category: 'Graphics & Games', skills: ['OpenGL', 'GLSL', 'GLFW', 'GLM', 'ImGui', 'DigiPen Game Frameworks'] },
   { category: 'Web & Data', skills: ['React', 'Leaflet', 'Node.js', 'PostgreSQL', 'Vite'] },
   { category: 'Computer Vision', skills: ['OpenCV', 'YOLO', 'OpenVINO', 'Depth Anything V2', 'Open3D', 'NumPy'] },
-  { category: 'Build & Development', skills: ['CMake', 'vcpkg', 'Git', 'Visual Studio'] },
+  { category: 'Build & Development', skills: ['CMake', 'vcpkg', 'Ninja', 'Git', 'Visual Studio', 'VS Code', 'Command Line (PowerShell / WSL)'] },
   { category: 'Design & Hardware', skills: ['Fusion 360', 'Arduino UNO', 'Raspberry Pi', 'ThingSpeak'] },
 ];
 
@@ -35,6 +35,7 @@ const education = [
     school: "Republic Polytechnic",
     period: "Apr 2021 – May 2024",
     detail: "Graduated with Merit",
+    certificate: "/documents/poly%20certs/grad_cert.png",
   },
 ];
 
@@ -168,6 +169,7 @@ export default function About() {
                   <p className="education-note">
                     {item.detail}
                   </p>
+                  {item.certificate && <a className="certificate-link" href={item.certificate} target="_blank" rel="noopener noreferrer">View diploma certificate ↗</a>}
                 </div>
               </div>
             ))}
@@ -195,7 +197,6 @@ export default function About() {
               </div>
             ))}
           </div>
-
           <a className="certificate-link" href={polyCertificates} target="_blank" rel="noopener noreferrer">View full RP certificate collection (PDF, 20 pages) ↗</a>
 
           <div className="distinction-note">
@@ -234,6 +235,16 @@ export default function About() {
             and supporting these events has taught me to communicate ideas,
             coordinate work, and keep the people using a product in mind.
           </p>
+          <div className="about-community-gallery">
+            <figure>
+              <a href="/images/about/project_seniorita_photo.jpg" target="_blank" rel="noopener noreferrer"><img src="/images/about/project_seniorita_photo.jpg" alt="Group photo at our induction as Youth Corps Leaders." loading="lazy" /></a>
+              <figcaption>Inducted as Youth Corps Leaders.</figcaption>
+            </figure>
+            <figure>
+              <a href="/images/about/project_seniorita_photo2.jpg" target="_blank" rel="noopener noreferrer"><img src="/images/about/project_seniorita_photo2.jpg" alt="Team Seniorita on stage at the Engineering in Community award ceremony." loading="lazy" /></a>
+              <figcaption>With Team Seniorita at the Engineering in Community award ceremony.</figcaption>
+            </figure>
+          </div>
           <div className="leadership-list">
             {/* Youth Corps Singapore */}
             <div className="leadership-card">
@@ -315,3 +326,4 @@ export default function About() {
     </section>
   );
 }
+
