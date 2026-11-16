@@ -5,6 +5,8 @@ const project = {
   role: 'Programmer', team: 'Code Crusaders', status: 'Completed',
   technologies: 'C++ · DigiPen Alpha Engine',
   cover: 'Capture an active battle with deployed viruses, target units, and individual health bars visible.',
+  coverImage: '/images/works/gam150/game_level.png',
+  coverAlt: 'Viral Invaders battlefield with units, health bars, and a Pei Pa Koa event graphic.',
   overview: 'Inspired by Plants vs. Zombies, Viral Invaders puts the player in control of the attacking forces. Players spend resources to deploy virus types across stages and waves. Randomised environmental events modify unit attributes, including health and attack rate, requiring players to adapt their strategy.',
   contributions: [
     'Spritesheet animation system — Designed and implemented a system for event animations, supporting nine-frame animations for each of the four events.',
