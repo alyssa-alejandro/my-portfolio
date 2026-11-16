@@ -5,7 +5,7 @@ const project = {
   id: 'gam250', category: 'GAM250 / GAME VFX', title: 'Out of Memory',
   description: 'A narrative action game with two boss encounters, built in a team-developed C++ and OpenGL engine.',
   role: 'VFX Contributor', team: 'FueledByCaffiene', status: 'Completed',
-  technologies: 'C++ · Caffeine Engine',
+  technologies: 'C++ · Lua · Caffeine Engine',
   cover: 'The player facing the car boss in Out of Memory’s first stage.',
   coverImage: '/images/works/gam250/level1_game.png',
   coverAlt: 'Out of Memory gameplay showing the player beside the car boss in a street arena, with health and stamina UI.',
@@ -30,3 +30,4 @@ const project = {
 };
 
 export default project;
+

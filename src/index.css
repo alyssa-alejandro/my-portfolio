@@ -2427,3 +2427,28 @@ button {
 .project-deep-dive { margin-top: 32px; border-top: 1px solid var(--border); padding-top: 20px; }
 .project-deep-dive > summary { cursor: pointer; color: var(--lavender); padding: 8px 0; font-size: .95rem; }
 .project-deep-dive > summary:focus-visible { outline: 2px solid var(--lavender); outline-offset: 4px; }
+
+/* Compact card hierarchy */
+.work-project-grid { align-items: start; }
+.work-project-body { flex: none; gap: 0; padding: 24px; }
+.work-project-body > p:not(.eyebrow) { min-height: 0; }
+.work-project-body h3 { font-size: 1.35rem; font-weight: 600; margin: 0 0 14px; }
+.project-card-badges { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 16px; }
+.project-card-badges:empty { display: none; }
+.work-project-body .project-card-badges > span { margin: 0; }
+.project-result-badge { display: inline-flex; padding: 6px 10px; border: 1px solid #8a7341; border-radius: 5px; background: #e8bc5e12; color: #f1cf85; font-size: .75rem; font-weight: 600; line-height: 1.4; }
+.work-project-body > .project-card-summary { margin: 0 0 20px; min-height: 0; color: #c9c3d0; }
+.project-card-role { display: flex; flex-direction: column; gap: 5px; margin-bottom: 16px; }
+.project-card-role > span { color: var(--muted); font-size: .7rem; }
+.project-card-role strong { font-size: .88rem; font-weight: 500; line-height: 1.6; color: #eee8f6; }
+.project-card-tools { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 22px; }
+.project-card-tools > span { padding: 4px 8px; background: #ffffff05; border: 1px solid var(--border); border-radius: 4px; color: #bcb6c5; font-size: .7rem; line-height: 1.5; }
+.project-card-footer { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 16px; border-top: 1px solid var(--border); }
+.project-card-status { font-size: .73rem; color: var(--muted); line-height: 1.5; }
+.work-project-body .project-card-footer .project-view-link { margin: 0; padding: 0; color: var(--lavender); font-size: .82rem; font-weight: 500; white-space: nowrap; }
+
+/* Equal-height project cards with aligned footers. */
+.work-project-grid { align-items: stretch; }
+.work-project-card { height: 100%; }
+.work-project-body { flex: 1; }
+.project-card-footer { margin-top: auto; }

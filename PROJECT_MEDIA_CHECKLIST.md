@@ -18,7 +18,7 @@ Use landscape 16:9 covers where possible, and keep UI text readable. Capture rea
 - Chai & Chain: the notes conflict between C Processing and Alpha Engine. The page uses C Processing from the detailed project header/overview. Confirm the correct framework.
 - Chai & Chain: verify individual code contributions against available source. Wording currently preserves the notes’ “contributed to” scope.
 - EV Fleet Simulator: marked ongoing, September 2026–April 2027. The portfolio now focuses on database-backed login and the map scenario layer, based on the updated contribution description and a source review. Legacy 3D work is omitted.
-- EV Fleet Simulator: check what team/ST Engineering material can be shared; label mock data and use approved screenshots.
+- EV Fleet Simulator: check what team/Upsight material can be shared; label mock data and use approved screenshots.
 - Confirm repository URLs and sharing permissions before adding source links. No URLs were provided, so source buttons are omitted.
 - Team sizes and durations for GAM100/150/200 were not supplied and have not been invented.
 - Technical explanations stay within the supplied notes; add precise algorithms, code excerpts, or measured results only when supported by the implementation.

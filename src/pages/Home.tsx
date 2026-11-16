@@ -19,7 +19,7 @@ const selectedWork = [
   },
   {
     name: 'EV Fleet Simulator', type: 'Industry collaboration · In progress',
-    description: 'Database-backed login and the map scenario layer for a fleet simulation project with ST Engineering.',
+    description: 'Database-backed login and the map scenario layer for a fleet simulation project with Upsight.',
     tools: 'React / Leaflet / PostgreSQL', image: '/images/works/gam300/mapscreen.png', alt: 'EV Fleet Simulator scenario map', imageBrief: 'Scenario map showing vehicles, depots, and controls. Use shareable demo data. Landscape, 16:9.',
   },
   {
@@ -45,7 +45,7 @@ export default function Home() {
           <HomeImage {...portrait} portrait />
           <aside className="personal-now" aria-label="Current projects">
             <h2>On my desk lately</h2>
-            <p>An EV fleet simulator with ST Engineering, and a Python project that turns photographs into estimated 3D point clouds.</p>
+            <p>An EV fleet simulator with Upsight, and a Python project that turns photographs into estimated 3D point clouds.</p>
             <span>Both are still in progress.</span>
           </aside>
           </div>

@@ -39,7 +39,7 @@ const entries = [
     description:
       'Building an interactive interface for exploring a live fleet simulation.',
     detail:
-      'Working on database-backed login and the map scenario layer for a team project with ST Engineering.',
+      'Working on database-backed login and the map scenario layer for a team project with Upsight.',
     meta: 'REACT · LEAFLET · POSTGRESQL',
     date: 'IN PROGRESS',
   },

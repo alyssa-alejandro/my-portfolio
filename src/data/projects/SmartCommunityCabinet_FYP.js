@@ -1,5 +1,6 @@
 /** @type {import('./types').Project} */
 const project = {
+  grade: 'A',
   summary: "An IoT food-sharing cabinet. Team lead with database and hardware contributions.",
   highlights: ["Led a five-member final-year project team.","Shared ThingSpeak database, hardware, and electronic-lock implementation."],
   leadership: true,
@@ -32,3 +33,4 @@ const project = {
 };
 
 export default project;
+

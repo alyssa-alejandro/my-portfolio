@@ -59,15 +59,20 @@ export default function Work() {
               <div className="work-project-body">
                 <p className="eyebrow">{project.category}</p>
                 <h3>{project.title}</h3>
-                {project.leadership && <LeadershipBadge />}
-        {project.solo && <SoloBadge />}
-                <p>{project.summary || project.description}</p><p className="project-role">{project.role} · {project.status}{project.grade && ` · Grade ${project.grade}`}{project.award && ` · ${project.award}`}</p>
-                <div className="project-tech">
-                  {project.technologies}
+                <div className="project-card-badges">
+                  {project.leadership && <LeadershipBadge />}
+                  {project.solo && <SoloBadge />}
+                  {project.grade && <span className="project-result-badge">Grade {project.grade}</span>}
+                  {project.award && <span className="project-result-badge">★ {project.award}</span>}
                 </div>
+                <p className="project-card-summary">{project.summary || project.description}</p>
+                <div className="project-card-role"><span>My role</span><strong>{project.role}</strong></div>
+                <div className="project-card-tools">{project.technologies.split(' · ').map(tool => <span key={tool}>{tool}</span>)}</div>
+                <div className="project-card-footer"><span className="project-card-status">{project.status}</span>
                 <span className="project-view-link">
                   {project.status === "Planned" ? "View project plan ↗" : "View project ↗"}
                 </span>
+                </div>
               </div>
             </button>
           ))}

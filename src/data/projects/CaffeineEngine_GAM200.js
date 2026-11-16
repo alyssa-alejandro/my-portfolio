@@ -6,7 +6,7 @@ const project = {
   id: 'caffeine-engine', category: 'GAM200 / CUSTOM ENGINE', title: 'Caffeine Engine',
   description: 'The team-developed C++ and OpenGL engine behind Out of Memory, combining my graphics programming work with team coordination and build-stability support.',
   role: 'Graphics Programmer & Project Coordination', team: 'FueledByCaffiene', status: 'Completed',
-  technologies: 'C++ · OpenGL · GLSL · GLM · GLFW',
+  technologies: 'C++ · OpenGL · GLSL · GLM · GLFW · ImGui',
   cover: 'Caffeine Engine’s editor displaying the Out of Memory main-menu scene, with hierarchy, viewport, and inspector panels.',
   coverImage: '/images/works/gam200/leveleditor_homescreen.png',
   coverAlt: 'Caffeine Engine editor showing the Out of Memory menu in its viewport, with scene hierarchy, inspector, and console.',
@@ -38,3 +38,4 @@ const project = {
 };
 
 export default project;
+
