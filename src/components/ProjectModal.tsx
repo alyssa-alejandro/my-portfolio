@@ -55,8 +55,9 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
           <div><dt>Status</dt><dd>{project.status}</dd></div>{project.grade && <div><dt>Assignment grade</dt><dd>{project.grade}</dd></div>}
           {project.award && <div><dt>Team recognition</dt><dd>{project.award}</dd></div>}{project.period && <div><dt>Project period</dt><dd>{project.period}</dd></div>}
         </dl>
-        <figure className="media-placeholder cover-placeholder">
-          <span className="eyebrow">Image placeholder / project cover</span>
+        <figure className={project.coverImage ? "project-image project-cover" : "media-placeholder cover-placeholder"}>
+          {project.coverImage ? <a href={project.coverImage} target="_blank" rel="noopener noreferrer"><img src={project.coverImage} alt={project.coverAlt || project.title} /></a> :
+          <span className="eyebrow">Image placeholder / project cover</span>}
           <figcaption>{project.cover}</figcaption>
         </figure>
         <div className="project-modal-section"><h3>Project overview</h3><p>{project.overview}</p></div>
@@ -68,7 +69,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
         <div className="project-modal-section"><h3>Tools & technologies</h3><p>{project.technologies}</p></div>
         <div className="project-modal-section"><h3>Project media</h3>
           <div className="project-media-grid">{project.media.map((media, index) => (
-            <figure className={media.youtubeId ? 'project-video' : 'media-placeholder'} key={media.title}>
+            <figure className={media.youtubeId ? 'project-video' : media.src ? 'project-image' : 'media-placeholder'} key={media.title}>
               {media.youtubeId ? (
                 <>
                   <h4>{media.title}</h4>
@@ -81,6 +82,12 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                     allowFullScreen
                   />
                   <figcaption>{media.brief} <a href={`https://youtu.be/${media.youtubeId}`} target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a></figcaption>
+                </>
+              ) : media.src ? (
+                <>
+                  <h4>{media.title}</h4>
+                  <a href={media.src} target="_blank" rel="noopener noreferrer" aria-label={`Open full-size ${media.title}`}><img src={media.src} alt={media.alt || media.title} loading="lazy" /></a>
+                  <figcaption>{media.brief}</figcaption>
                 </>
               ) : (
                 <>

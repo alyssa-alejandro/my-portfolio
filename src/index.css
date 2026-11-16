@@ -2381,3 +2381,12 @@ button {
 .project-video iframe { display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; border-radius: 6px; background: #08080c; }
 .project-video figcaption { margin-top: 12px; color: #bcb6c5; font-size: .85rem; line-height: 1.8; }
 .project-video figcaption a { color: var(--lavender); text-decoration: underline; text-underline-offset: 3px; }
+
+.work-project-visual.has-cover-image { padding: 0; min-height: 0; background: #0a0a10; }
+.work-cover-image { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: contain; }
+.project-image { margin: 0; }
+.project-image h4 { margin: 0 0 14px; font-size: 1.1rem; }
+.project-image img { display: block; max-width: 100%; height: auto; margin: 0 auto; }
+.project-image:not(.project-cover) img { min-width: min(100%, 260px); image-rendering: pixelated; }
+.project-image figcaption { margin-top: 14px; color: #bcb6c5; font-size: .85rem; line-height: 1.8; }
+.project-cover img { width: 100%; }

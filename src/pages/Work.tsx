@@ -36,7 +36,8 @@ export default function Work() {
               key={project.id}
               onClick={() => setSelectedProject(project)}
             >
-              <div className="work-project-visual">
+              <div className={project.coverImage ? "work-project-visual has-cover-image" : "work-project-visual"}>
+                {project.coverImage ? <img className="work-cover-image" src={project.coverImage} alt={project.coverAlt || project.title} /> : <>
                 <span className="visual-index">
                   {project.category.split(" / ")[0]}
                   {" / "}
@@ -50,6 +51,7 @@ export default function Work() {
                 <span className="card-media-brief">Image placeholder · {project.cover}</span><span className="visual-caption">
                   {project.title}
                 </span>
+              </>}
               </div>
 
               <div className="work-project-body">

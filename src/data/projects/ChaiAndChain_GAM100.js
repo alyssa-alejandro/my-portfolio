@@ -5,7 +5,9 @@ const project = {
   description: 'A two-player cooperative cooking game where a connecting chain and spoiling ingredients turn every order into a teamwork challenge.',
   role: 'Project Lead', team: 'Matcha-tea', status: 'Completed',
   technologies: 'C · DigiPen C Processing',
-  cover: 'Show both players across the kitchen, with their connecting chain and recipe stations visible.',
+  cover: 'Two players connected by a chain, with ingredient kiosks and recipe stations visible.',
+  coverImage: '/images/works/gam100/gameplay-cover.png',
+  coverAlt: 'Chai & Chain gameplay with two players linked by a chain, ingredient kiosks, and two recipe stations.',
   overview: 'Players work together to fulfil customer orders by throwing ingredients between two sides of a kitchen and delivering them to recipe stations. Ingredients must be collected within 10 seconds before they spoil, and spoiled items must be discarded. A chain limits the distance between the players, making communication and coordinated movement central to completing each level.',
   contributions: [
     'Recipe randomisation — Contributed to the recipe randomisation system to introduce variation in the recipes presented during gameplay.',
@@ -20,7 +22,8 @@ const project = {
   },
   media: [
     { kind: 'Video', title: 'Promotional trailer', youtubeId: 'zWDvvzZvKeo', brief: 'The promotional trailer I created for Chai & Chain.' },
-    { kind: 'Image', title: 'Ingredient list UI', brief: 'Capture the ingredient names and corresponding images at a readable size. Include the recipe or order context and annotate the display you worked on.' },
+    { kind: 'Image', title: 'Earl Grey Milk Tea recipe UI', src: '/images/works/gam100/earl-grey-recipe.png', alt: 'Earl Grey Milk Tea recipe panel with ingredient icons, required quantities, and current counts.', brief: 'The recipe panel pairs the drink name with ingredient icons, required quantities, and current counts. I contributed to the ingredient-list display.' },
+    { kind: 'Image', title: 'Matcha Tea recipe UI', src: '/images/works/gam100/matcha-recipe.png', alt: 'Matcha Tea recipe panel showing four matcha ingredients and two honey ingredients, with current counts.', brief: 'A second recipe panel showing a different ingredient combination. My contributions included recipe randomisation and the ingredient display.' },
     { kind: 'Video', title: 'Recipe variation and movement', brief: 'Show two different recipe selections and a short movement sequence. Use captions to distinguish your contributions from the team’s chain and throwing mechanics.' },
   ],
 };

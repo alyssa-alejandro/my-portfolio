@@ -16,6 +16,8 @@ export interface Project {
   technologies: string;
   spotlight: { title: string; approach: string; takeaway: string };
   cover: string;
-  media: { title: string; kind: 'Image' | 'Video'; brief: string; youtubeId?: string }[];
+  coverImage?: string;
+  coverAlt?: string;
+  media: { title: string; kind: 'Image' | 'Video'; brief: string; youtubeId?: string; src?: string; alt?: string }[];
   github?: string;
 }
