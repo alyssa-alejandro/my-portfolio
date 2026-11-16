@@ -31,7 +31,7 @@ export default function Work() {
         </div>
 
         <div className="work-project-grid">
-          {group.items.map((project, index) => (
+          {group.items.map((project) => (
             <button
               type="button"
               className="work-project-card"
@@ -40,19 +40,10 @@ export default function Work() {
             >
               <div className={project.coverImage ? `work-project-visual has-cover-image${project.id === "gam150" ? " gam150-cover" : project.id === "ekosafe" ? " ekosafe-cover" : ""}` : "work-project-visual"}>
                 {project.coverImage ? <img className="work-cover-image" src={project.coverImage} alt={project.coverAlt || project.title} /> : <>
-                <span className="visual-index">
-                  {project.category.split(" / ")[0]}
-                  {" / "}
-                  {String(index + 1).padStart(3, "0")}
-                </span>
-                <div className="work-series-mark">
-                  {project.id === "gam250" ? "OOM" : project.id === "caffeine-engine" ? "CE" :
-                   project.id === "gam300" ? "EV" : project.id === "seam-carving" ? "SC" : project.id === "python-3d-vision" ? "CV" :
-                   project.id === "cprex" ? "CPR" : project.id === "community-cabinet" ? "IoT" : project.id === "folding-cabinet-table" ? "E262" : project.id === "quiknom" ? "QN" : project.id === "ekosafe" ? "EKO" : project.id === "vulkan-renderer" ? "VK" : "GAM"}
+                <div className="project-pending-cover">
+                  <span>{project.status === 'Planned' ? 'Planned project' : /progress|development|ongoing/i.test(project.status) ? 'In progress' : 'Preview coming soon'}</span>
+                  <h4>{project.title}</h4>
                 </div>
-                <span className="visual-caption">
-                  {project.title}
-                </span>
               </>}
               </div>
 

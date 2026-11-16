@@ -2464,3 +2464,8 @@ button {
 .project-repo-link { display: inline-flex; margin: 4px 0 8px; padding: 10px 14px; border: 1px solid #68547f; border-radius: 5px; color: var(--lavender); font-size: .85rem; }
 .project-repo-link:hover { background: #c6a7ff0c; }
 .project-repo-link:focus-visible { outline: 2px solid var(--lavender); outline-offset: 4px; }
+
+.work-project-visual:not(.has-cover-image) { width: 100%; aspect-ratio: 16 / 9; min-height: 0; padding: 24px; flex-shrink: 0; justify-content: center; }
+.project-pending-cover { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; width: 100%; text-align: center; }
+.project-pending-cover > span { font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.project-pending-cover h4 { font-size: clamp(1.2rem, 2.3vw, 1.9rem); max-width: 24ch; line-height: 1.35; font-weight: 500; color: var(--lavender); margin: 0; }
