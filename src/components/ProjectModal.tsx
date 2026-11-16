@@ -47,8 +47,12 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
         <button type="button" className="project-modal-close" onClick={onClose} aria-label="Close project details">×</button>
         <p className="eyebrow">{project.category}</p>
         <h2 id="project-modal-title">{project.title}</h2>
-        {project.leadership && <LeadershipBadge />}
-        {project.solo && <SoloBadge />}
+        <div className="project-card-badges">
+          {project.leadership && <LeadershipBadge />}
+          {project.solo && <SoloBadge />}
+          {project.grade && <span className="project-result-badge">Grade {project.grade}</span>}
+          {project.award && <span className="project-result-badge">★ {project.award}</span>}
+        </div>
         <p className="project-modal-description">{project.summary || project.description}</p>
         <dl className="project-facts">
           <div><dt>My role</dt><dd>{project.role}</dd></div>

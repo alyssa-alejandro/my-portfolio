@@ -6,7 +6,7 @@ const project = {
   id: 'folding-cabinet-table', category: 'E262 / PRODUCT DESIGN & PROTOTYPING', title: 'Product Design and Prototyping Individual Assignment',
   description: 'An individual design study for a fold-away cabinet table, giving users a surface for sorting food items and packing reusable bags.',
   role: 'Individual Product Design', team: 'Individual assignment / Republic Polytechnic', status: 'Completed design study', grade: 'A',
-  technologies: 'CAD Modelling · Mechanism Research · Design Documentation',
+  technologies: 'Fusion 360 · Mechanism Research · Design Documentation',
   cover: 'CAD view of the foldable table attached to the cabinet, showing the tabletop hinges and triangular support.',
   coverImage: '/images/works/e262/foldable%20table.png',
   coverAlt: 'CAD view of a cabinet-mounted foldable table with three tabletop hinges and a hinged triangular support underneath.',
@@ -31,4 +31,5 @@ const project = {
 };
 
 export default project;
+
 

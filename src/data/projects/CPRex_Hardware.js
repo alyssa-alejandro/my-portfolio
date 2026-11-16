@@ -1,5 +1,6 @@
 /** @type {import('./types').Project} */
 const project = {
+  award: 'Top 10 Finalist · iDare',
   summary: "An Arduino-based CPR practice and feedback prototype for a startup.",
   highlights: ["Developed the practice prototype using Arduino UNO and C.","Used Fusion 360 for physical product design."],
   solo: true,
@@ -28,3 +29,4 @@ const project = {
 };
 
 export default project;
+
