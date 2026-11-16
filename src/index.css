@@ -2403,3 +2403,7 @@ button {
 
 .work-project-visual.ekosafe-cover { background: #f7f7f7; }
 .ekosafe-cover .work-cover-image { padding: 20px; }
+
+.certificate-link { display: inline-block; margin: 10px 0; color: var(--lavender); font-size: .82rem; line-height: 1.7; text-decoration: underline; text-underline-offset: 4px; }
+.certificate-link:hover { color: #eee3ff; }
+.certificate-link:focus-visible { outline: 2px solid var(--lavender); outline-offset: 4px; }

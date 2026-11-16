@@ -38,27 +38,30 @@ const education = [
   },
 ];
 
-const awards = [
+const polyCertificates = '/documents/poly%20certs/AlyssaAlejandro_Certs.pdf';
+const youthDocuments = '/documents/youth%20corps/202403_Youth_Corps_LP_-_Alyssa.pdf';
+
+const awards: { year: string; title: string; detail?: string; page?: number }[] = [
   {
     year: "4 SEMESTERS",
-    title: "Director's Roll of Honour",
+    title: "Director's Roll of Honour", page: 1,
     detail: "Awarded for four consecutive semesters at Republic Polytechnic.",
   },
   {
     year: "AY2022",
-    title: "Module Prize — Innovation & Design Thinking",
+    title: "Module Prize — Innovation & Design Thinking", page: 5,
   },
   {
     year: "AY2022",
-    title: "Entrepreneurship Bootcamp — Best Pitch",
+    title: "Entrepreneurship Bootcamp — Best Pitch", page: 6,
   },
   {
     year: "AY2022",
-    title: "Republic Award",
+    title: "Republic Award", page: 9,
   },
   {
     year: "AY2023",
-    title: "M.A.D. Service-Learning Leader Award",
+    title: "M.A.D. Service-Learning Leader Award", page: 19,
   },
   { year: 'RP', title: 'Engineering in Community Award' },
   { year: 'TOP 10', title: 'iDare Competition Finalist', detail: 'Republic Polytechnic entrepreneurship competition.' },
@@ -187,10 +190,13 @@ export default function About() {
                   <h3>{award.title}</h3>
 
                   {award.detail && <p>{award.detail}</p>}
+                  {award.page && <a className="certificate-link" href={`${polyCertificates}#page=${award.page}`} target="_blank" rel="noopener noreferrer">View certificate (PDF) ↗</a>}
                 </div>
               </div>
             ))}
           </div>
+
+          <a className="certificate-link" href={polyCertificates} target="_blank" rel="noopener noreferrer">View full RP certificate collection (PDF, 20 pages) ↗</a>
 
           <div className="distinction-note">
             <p className="eyebrow">
@@ -222,7 +228,7 @@ export default function About() {
 
           <p className="about-description">
             I participated in the Entrepreneurship Immersion Programme and
-            Youth Corps Leaders Programme in 2024. I've also managed and
+            Youth Corps Leaders Programme, completing the programme in April 2023 and receiving my certificate in March 2024. I've also managed and
             created social media content for IGNITE 2022, orientation
             programmes, and student leadership camps. Leading project teams
             and supporting these events has taught me to communicate ideas,
@@ -236,13 +242,14 @@ export default function About() {
               </p>
 
               <h3>Youth Corps Singapore</h3>
+              <a className="certificate-link" href={youthDocuments} target="_blank" rel="noopener noreferrer">View certificate & testimonial (PDF, 2 pages) ↗</a>
 
               <p className="leadership-role">
-                Leadership Programme · Co-Lead
+                Leaders Programme · Co-Lead · October 2022–April 2023
               </p>
 
               <p>
-                Co-led a year-long leadership programme focused
+                Co-led Project Seniorgy with Team Seniorita, partnering with Care Corner Senior Services and focusing
                 on engaging seniors through meaningful
                 activities and community experiences.
               </p>
