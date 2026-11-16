@@ -1,5 +1,6 @@
 /** @type {import('./types').Project} */
 const project = {
+  github: 'https://github.com/alyssa-alejandro/GAM100_matchatea-m',
   summary: "Two-player cooking with a chain constraint. Project lead and gameplay contributor.",
   highlights: ["Contributed recipe randomisation, ingredient UI, and player movement.","Led planning and discussions; created the promotional trailer."],
   leadership: true,

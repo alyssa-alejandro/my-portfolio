@@ -1,5 +1,6 @@
 /** @type {import('./types').Project} */
 const project = {
+  github: 'https://github.com/alyssa-alejandro/3d-vision-gpu',
   summary: "A Python experiment combining object detection and estimated 3D geometry.",
   highlights: ["Integrated YOLO/OpenVINO detection and Depth Anything V2.","Built coloured point clouds with downsampling and PLY export.","Object alignment is in progress; depth is uncalibrated."],
   solo: true,
