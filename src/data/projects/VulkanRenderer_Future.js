@@ -1,5 +1,7 @@
 /** @type {import('./types').Project} */
 const project = {
+  summary: "Planned C++/Vulkan renderer to explore explicit graphics programming.",
+  highlights: ["Start with a small rendered scene using GLSL shaders.","Learn resource management and document development milestones."],
   id: 'vulkan-renderer', category: 'FUTURE PROJECT / RENDERING', title: 'Vulkan Renderer',
   solo: true, status: 'Planned', role: 'Personal Project', team: 'Independent project',
   description: 'A planned C++ renderer for learning Vulkan and exploring explicit graphics programming.',

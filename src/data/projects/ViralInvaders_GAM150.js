@@ -1,5 +1,7 @@
 /** @type {import('./types').Project} */
 const project = {
+  summary: "Reverse tower defence with animated events and changing combat conditions.",
+  highlights: ["Built event animation support and drew four nine-frame spritesheets.","Implemented health bars, two virus types, two events, and a timer."],
   id: 'gam150', category: 'GAM150 / GAMEPLAY & ANIMATION', title: 'Viral Invaders',
   description: 'A reverse tower-defence game where players deploy viruses and adapt to changing battlefield conditions.',
   role: 'Programmer', team: 'Code Crusaders', status: 'Completed',

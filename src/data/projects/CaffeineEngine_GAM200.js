@@ -1,5 +1,7 @@
 /** @type {import('./types').Project} */
 const project = {
+  summary: "Custom C++ engine: rendering, cameras, lighting, and team coordination.",
+  highlights: ["Contributed rendering, camera, lighting, and window systems in OpenGL.","Monitored crashes and helped teammates work around unstable builds.","Coordinated milestone submissions and compiled playtest feedback."],
   leadership: true,
   id: 'caffeine-engine', category: 'GAM200 / CUSTOM ENGINE', title: 'Caffeine Engine',
   description: 'The team-developed C++ and OpenGL engine behind Out of Memory, combining my graphics programming work with team coordination and build-stability support.',

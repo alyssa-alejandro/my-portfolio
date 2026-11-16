@@ -22,7 +22,9 @@ export default function Work() {
         </p>
       </header>
 
-      {[{ title: "Game Development", items: gameProjects }, { title: "Software Development", items: softwareProjects }, { title: "Hardware & IoT", items: hardwareProjects }, { title: "Entrepreneurship", items: entrepreneurshipProjects }, { title: "Future Projects", items: futureProjects }].map((group) => (<section className="work-category" key={group.title}>
+      <nav className="work-category-nav" aria-label="Project categories"><a href="#game-development">Games</a><a href="#software-development">Software</a><a href="#hardware-iot">Hardware & IoT</a><a href="#entrepreneurship">Entrepreneurship</a><a href="#future-projects">Future</a></nav>
+
+      {[{ title: "Game Development", items: gameProjects }, { title: "Software Development", items: softwareProjects }, { title: "Hardware & IoT", items: hardwareProjects }, { title: "Entrepreneurship", items: entrepreneurshipProjects }, { title: "Future Projects", items: futureProjects }].map((group) => (<section className="work-category" key={group.title} id={group.title.toLowerCase().replace(/ & /g, "-").replace(/ /g, "-")}>
         <div className="work-category-heading">
           <h2>{group.title}</h2>
           <span>{String(group.items.length).padStart(2, "0")} PROJECTS</span>
@@ -48,7 +50,7 @@ export default function Work() {
                    project.id === "gam300" ? "EV" : project.id === "seam-carving" ? "SC" : project.id === "python-3d-vision" ? "CV" :
                    project.id === "cprex" ? "CPR" : project.id === "community-cabinet" ? "IoT" : project.id === "folding-cabinet-table" ? "E262" : project.id === "quiknom" ? "QN" : project.id === "ekosafe" ? "EKO" : project.id === "vulkan-renderer" ? "VK" : "GAM"}
                 </div>
-                <span className="card-media-brief">Image placeholder · {project.cover}</span><span className="visual-caption">
+                <span className="visual-caption">
                   {project.title}
                 </span>
               </>}
@@ -59,7 +61,7 @@ export default function Work() {
                 <h3>{project.title}</h3>
                 {project.leadership && <LeadershipBadge />}
         {project.solo && <SoloBadge />}
-                <p>{project.description}</p><p className="project-role">{project.role} · {project.status}{project.grade && ` · Grade ${project.grade}`}{project.award && ` · ${project.award}`}</p>
+                <p>{project.summary || project.description}</p><p className="project-role">{project.role} · {project.status}{project.grade && ` · Grade ${project.grade}`}{project.award && ` · ${project.award}`}</p>
                 <div className="project-tech">
                   {project.technologies}
                 </div>

@@ -1,5 +1,7 @@
 /** @type {import('./types').Project} */
 const project = {
+  summary: "A fold-away cabinet table designed for easier food sorting and bag packing.",
+  highlights: ["Researched folding mechanisms and documented a dimensioned CAD design.","Included a bag slot and rounded corners; assignment grade A."],
   solo: true,
   id: 'folding-cabinet-table', category: 'E262 / PRODUCT DESIGN & PROTOTYPING', title: 'Product Design and Prototyping Individual Assignment',
   description: 'An individual design study for a fold-away cabinet table, giving users a surface for sorting food items and packing reusable bags.',

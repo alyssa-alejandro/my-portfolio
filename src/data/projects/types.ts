@@ -3,6 +3,8 @@ export interface Project {
   category: string;
   title: string;
   description: string;
+  summary?: string;
+  highlights?: string[];
   role: string;
   leadership?: boolean;
   solo?: boolean;

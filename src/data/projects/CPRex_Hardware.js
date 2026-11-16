@@ -1,5 +1,7 @@
 /** @type {import('./types').Project} */
 const project = {
+  summary: "An Arduino-based CPR practice and feedback prototype for a startup.",
+  highlights: ["Developed the practice prototype using Arduino UNO and C.","Used Fusion 360 for physical product design."],
   solo: true,
   id: 'cprex', category: 'HARDWARE / EMBEDDED PROTOTYPING', title: 'CPRex',
   description: 'A CPR monitoring and feedback practice device developed for a startup during the Entrepreneurship Immersion Programme.',

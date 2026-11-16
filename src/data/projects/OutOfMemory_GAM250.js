@@ -1,5 +1,7 @@
 /** @type {import('./types').Project} */
 const project = {
+  summary: "A boss-combat game built with Caffeine Engine. I implemented game VFX.",
+  highlights: ["Implemented door and player particle effects.","Created transition effects within the team’s game."],
   id: 'gam250', category: 'GAM250 / GAME VFX', title: 'Out of Memory',
   description: 'A narrative action game with two boss encounters, built in a team-developed C++ and OpenGL engine.',
   role: 'VFX Contributor', team: 'FueledByCaffiene', status: 'Completed',

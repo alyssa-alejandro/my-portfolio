@@ -1,5 +1,7 @@
 /** @type {import('./types').Project} */
 const project = {
+  summary: "EV fleet simulation with ST Engineering. My focus: login and scenario mapping.",
+  highlights: ["Implemented PostgreSQL-backed login and account-access feedback.","Developed the map scenario layer connecting fleet and site data."],
   id: 'gam300', category: 'GAM300 / AUTHENTICATION & MAP VISUALISATION', title: 'EV Fleet Simulator',
   description: 'An ongoing EV fleet simulator with ST Engineering, featuring database-backed login and an interactive scenario map.',
   role: 'Simulation & Visualisation Programmer', team: 'The Fellas', status: 'Ongoing',

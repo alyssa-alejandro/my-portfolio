@@ -1,5 +1,7 @@
 /** @type {import('./types').Project} */
 const project = {
+  summary: "Two-player cooking with a chain constraint. Project lead and gameplay contributor.",
+  highlights: ["Contributed recipe randomisation, ingredient UI, and player movement.","Led planning and discussions; created the promotional trailer."],
   leadership: true,
   id: 'gam100', category: 'GAM100 / PROJECT LEAD & GAMEPLAY', title: 'Chai & Chain',
   description: 'A two-player cooperative cooking game where a connecting chain and spoiling ingredients turn every order into a teamwork challenge.',

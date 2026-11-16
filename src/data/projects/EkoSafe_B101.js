@@ -1,5 +1,7 @@
 /** @type {import('./types').Project} */
 const project = {
+  summary: "A business proposal for customisable smart tags for families and caregivers.",
+  highlights: ["Led a five-member group and held the marketing role.","Collaborated on positioning, customer segmentation, and business planning."],
   id: 'ekosafe', category: 'B101 / ENTREPRENEURSHIP BUSINESS PLAN', title: 'EkoSafe',
   leadership: true,
   description: 'A group business plan for customisable smart tags, exploring a location-sharing product concept for families and caregivers.',

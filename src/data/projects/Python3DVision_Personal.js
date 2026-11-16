@@ -1,5 +1,7 @@
 /** @type {import('./types').Project} */
 const project = {
+  summary: "A Python experiment combining object detection and estimated 3D geometry.",
+  highlights: ["Integrated YOLO/OpenVINO detection and Depth Anything V2.","Built coloured point clouds with downsampling and PLY export.","Object alignment is in progress; depth is uncalibrated."],
   solo: true,
   id: 'python-3d-vision', category: 'PERSONAL PROJECT / COMPUTER VISION', title: 'Object Detection & 3D Scene Reconstruction',
   description: 'A Python exploration of GPU-assisted object detection and depth-estimated point clouds, with object-to-scene alignment in development.',

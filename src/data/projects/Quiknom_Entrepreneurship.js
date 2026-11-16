@@ -1,5 +1,7 @@
 /** @type {import('./types').Project} */
 const project = {
+  summary: "A food-discovery app concept. Led the bootcamp team awarded Best Pitch.",
+  highlights: ["Led the team developing the app concept and presentation.","Proposed a questionnaire-to-food-selection user journey."],
   leadership: true,
   id: 'quiknom', category: 'ENTREPRENEURSHIP / CONCEPT PROTOTYPE', title: 'QUIKNOM',
   description: 'A food-discovery app concept developed for RP’s Entrepreneurship Bootcamp, where our team received the Best Pitch award.',

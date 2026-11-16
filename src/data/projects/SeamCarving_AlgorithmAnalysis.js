@@ -1,5 +1,7 @@
 /** @type {import('./types').Project} */
 const project = {
+  summary: "Content-aware resizing: team algorithm analysis with a shared C++ build setup.",
+  highlights: ["Split tasks and established the CMake/OpenCV build workflow.","Integrated vcpkg dependencies, source discovery, and asset copying."],
   leadership: true,
   id: 'seam-carving', category: 'ALGORITHM ANALYSIS / GROUP PROJECT', title: 'Seam Carving',
   description: 'A C++ content-aware image resizing project comparing greedy and graph-cut seam selection, with an OpenCV-based image-processing pipeline.',

@@ -1,5 +1,7 @@
 /** @type {import('./types').Project} */
 const project = {
+  summary: "An IoT food-sharing cabinet. Team lead with database and hardware contributions.",
+  highlights: ["Led a five-member final-year project team.","Shared ThingSpeak database, hardware, and electronic-lock implementation."],
   leadership: true,
   id: 'community-cabinet', category: 'HARDWARE / IOT FINAL YEAR PROJECT', title: 'Smart Community Cabinet',
   description: 'An IoT food-sharing cabinet prototype connecting barcode-based item entry, cloud records, and electronic cabinet access.',
