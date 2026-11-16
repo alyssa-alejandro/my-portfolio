@@ -5,7 +5,9 @@ const project = {
   description: 'A group business plan for customisable smart tags, exploring a location-sharing product concept for families and caregivers.',
   role: 'Team Lead & Marketing', team: 'Five-member team / Republic Polytechnic', status: 'Academic business plan', period: 'AY2022 Semester 2 · Submitted February 2023',
   technologies: 'Business Planning · Market Segmentation · SWOT & PEST · Marketing Mix · Financial Projections',
-  cover: 'Create a simple EkoSafe concept board showing the customisable tag idea and intended family/caregiver audience. Label product visuals as concepts rather than a manufactured device.',
+  cover: 'EkoSafe’s logo for our B101 entrepreneurship business proposal.',
+  coverImage: '/images/works/ekosafe/ekosafe_logo.png',
+  coverAlt: 'EkoSafe logo featuring a green padlock and leaf inside a circle.',
   overview: 'For B101 Entrepreneurship at Republic Polytechnic, I led a five-member team developing EkoSafe, a business proposal for customisable smart tags. The concept focused on parents of young children and caregivers of older adults, particularly those living with dementia. The plan explored app-monitored location features, personalised tag designs, recycled materials, target customers, competitor positioning, marketing, and financial projections. This was an academic business-planning project rather than a launched company or verified tracking device.',
   contributions: [
     'Team leadership — Led the five-member group developing the EkoSafe business plan. The report identifies my role as Leader.',

@@ -2400,3 +2400,6 @@ button {
 .project-image-pair p { font-size: .85rem; margin: 0 0 12px; }
 .project-image .project-image-pair img { width: 100%; min-width: 0; max-height: 640px; object-fit: contain; object-position: top; image-rendering: auto; }
 @media (max-width: 480px) { .project-image-pair { gap: 10px; } .project-image-pair p { font-size: .72rem; } }
+
+.work-project-visual.ekosafe-cover { background: #f7f7f7; }
+.ekosafe-cover .work-cover-image { padding: 20px; }
