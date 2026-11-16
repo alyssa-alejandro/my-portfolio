@@ -20,7 +20,7 @@ const selectedWork = [
   {
     name: 'EV Fleet Simulator', type: 'Industry collaboration · In progress',
     description: 'Database-backed login and the map scenario layer for a fleet simulation project with ST Engineering.',
-    tools: 'React / Leaflet / PostgreSQL', image: '', alt: 'EV Fleet Simulator scenario map', imageBrief: 'Scenario map showing vehicles, depots, and controls. Use shareable demo data. Landscape, 16:9.',
+    tools: 'React / Leaflet / PostgreSQL', image: '/images/works/gam300/mapscreen.png', alt: 'EV Fleet Simulator scenario map', imageBrief: 'Scenario map showing vehicles, depots, and controls. Use shareable demo data. Landscape, 16:9.',
   },
   {
     name: 'CPRex', type: 'Startup project · Hardware prototype',

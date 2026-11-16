@@ -5,7 +5,9 @@ const project = {
   role: 'Simulation & Visualisation Programmer', team: 'The Fellas', status: 'Ongoing',
   period: 'September 2026 – April 2027',
   technologies: 'JavaScript · React · Leaflet · React Leaflet · Node.js · PostgreSQL · Vite',
-  cover: 'Capture the 2D scenario map with vehicles, depot markers, and the scenario controls visible.',
+  cover: 'The EV Fleet Simulator map with depot markers, scenario controls, and simulation telemetry.',
+  coverImage: '/images/works/gam300/mapscreen.png',
+  coverAlt: 'EV Fleet Simulator Singapore map with depot markers, energy scenario controls, timeline, and telemetry panels.',
   overview: 'Developed as part of GAM300 with ST Engineering, the application helps users configure and inspect electric vehicle fleet simulations. The map-based interface brings together fleet activity, charging sites, and scenario settings. My contributions include the database-backed login and the map scenario layer.',
   contributions: [
     'Database-backed login — Implemented the login functionality connecting the React interface to the authentication API and PostgreSQL-backed user accounts.',
