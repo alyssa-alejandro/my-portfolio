@@ -5,7 +5,9 @@ const project = {
   description: 'The team-developed C++ and OpenGL engine behind Out of Memory, combining my graphics programming work with team coordination and build-stability support.',
   role: 'Graphics Programmer & Project Coordination', team: 'FueledByCaffiene', status: 'Completed',
   technologies: 'C++ · OpenGL · GLSL · GLM · GLFW',
-  cover: 'Show a rendered scene from Caffeine Engine. Label it as an engine demonstration using Out of Memory assets and highlight the graphics systems you contributed to.',
+  cover: 'Caffeine Engine’s editor displaying the Out of Memory main-menu scene, with hierarchy, viewport, and inspector panels.',
+  coverImage: '/images/works/gam200/leveleditor_homescreen.png',
+  coverAlt: 'Caffeine Engine editor showing the Out of Memory menu in its viewport, with scene hierarchy, inspector, and console.',
   overview: 'Caffeine Engine is the custom engine our team developed for GAM200 to support Out of Memory. My work focused on graphics infrastructure: rendering game scenes, graphics and window setup, camera transformations, and lighting. Alongside programming, I helped the group keep track of progress, complete milestone deliverables, and respond to unstable engine builds. This entry covers engine systems and shared production work separately from the selected game VFX I implemented in Out of Memory.',
   contributions: [
     'Rendering pipeline — Contributed to the pipeline responsible for rendering game objects and displaying the scene.',
@@ -28,7 +30,8 @@ const project = {
     { kind: 'Video', title: 'Game editor demonstration', youtubeId: 'yo9KOp4WQIY', brief: 'A demonstration of the team’s game editor, showing more of the systems I worked on.' },
     { kind: 'Image', title: 'Rendering and camera breakdown', brief: 'Annotate a scene or diagram to explain the rendering and camera flow. Use source excerpts only where authorship is confirmed; do not invent pipeline stages.' },
     { kind: 'Image', title: 'Team coordination and deliverables', brief: 'Show a readable excerpt of your submission checklist, naming convention, progress tracking, or playtest improvement list. Explain how you used it to coordinate the team. Remove private teammate details and label proposed game changes separately from completed ones.' },
-    { kind: 'Image', title: 'Lighting or display handling', brief: 'Show a documented lighting example or matching captures at different resolutions. Explain the actual implementation or issue you addressed without claiming unsupported performance results.' },
+    { kind: 'Image', title: 'Lighting in the editor', src: '/images/works/gam200/lighting_vfx.png', alt: 'Caffeine Engine editor with a spotlight illuminating the menu scene and light properties visible in the inspector.', brief: 'A lighting demonstration in the editor, with the selected spotlight and its settings visible. I contributed to the engine’s lighting system; the scene artwork is team work.' },
+    { kind: 'Image', title: 'Particle effects preview', src: '/images/works/gam200/particle_vfx.png', alt: 'Particle effects over the Out of Memory menu scene beside the editor’s particle-emitter settings.', brief: 'Particle effects previewed in the engine editor, with emitter settings visible. This shows the editor context; my door and player particles and transitions are covered in the Out of Memory project.' },
   ],
 };
 
