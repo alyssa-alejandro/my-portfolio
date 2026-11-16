@@ -2375,3 +2375,9 @@ button {
 .logo { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; font-size: .9rem; font-weight: 600; }
 .logo > span { display: none; }
 .logo small { font-size: .62rem; font-weight: 400; letter-spacing: .12em; color: var(--muted); }
+
+.project-video { margin: 0; padding: 0; }
+.project-video h4 { margin: 0 0 14px; font-size: 1.1rem; }
+.project-video iframe { display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; border-radius: 6px; background: #08080c; }
+.project-video figcaption { margin-top: 12px; color: #bcb6c5; font-size: .85rem; line-height: 1.8; }
+.project-video figcaption a { color: var(--lavender); text-decoration: underline; text-underline-offset: 3px; }

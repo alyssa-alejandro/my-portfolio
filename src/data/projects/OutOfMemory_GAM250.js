@@ -1,6 +1,6 @@
 /** @type {import('./types').Project} */
 const project = {
-  id: 'gam200', category: 'GAM200 / GAME VFX', title: 'Out of Memory',
+  id: 'gam250', category: 'GAM250 / GAME VFX', title: 'Out of Memory',
   description: 'A narrative action game with two boss encounters, built in a team-developed C++ and OpenGL engine.',
   role: 'VFX Contributor', team: 'FueledByCaffiene', status: 'Completed',
   technologies: 'C++ · Caffeine Engine',
@@ -18,8 +18,8 @@ const project = {
     takeaway: 'I gained experience applying graphics-related work in a playable team project and considering how visual effects appear within the game scene.',
   },
   media: [
-    { kind: 'Video', title: 'Gameplay trailer', brief: 'Add the existing trailer. Include both boss encounters, dodging, and environmental cover so viewers can understand the game quickly.' },
-    { kind: 'Video', title: 'My VFX showcase', brief: 'Use your existing contribution recording. Show door particle effects, a transition, and player particle effects in a short sequence. Label each contribution and keep enough gameplay context to make it readable.' },
+    { kind: 'Video', title: 'Gameplay trailer', youtubeId: 'ObJkMefTWaE', brief: 'Team gameplay trailer for Out of Memory.' },
+    { kind: 'Video', title: 'My VFX showcase', brief: 'To record: a personal VFX showcase of door particle effects, transitions, and player particle effects. Label each contribution and keep enough gameplay context to make it readable.' },
     { kind: 'Image', title: 'Effect breakdown', brief: 'Capture a door or player particle effect, or a sequence of transition frames, and annotate the visible behaviour. Add a relevant code excerpt if shareable. Include a before/after comparison only if you have a genuine matching capture.' },
   ],
 };

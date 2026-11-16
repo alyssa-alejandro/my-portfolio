@@ -43,7 +43,7 @@ export default function Work() {
                   {String(index + 1).padStart(3, "0")}
                 </span>
                 <div className="work-series-mark">
-                  {project.id === "gam200" ? "OOM" : project.id === "caffeine-engine" ? "CE" :
+                  {project.id === "gam250" ? "OOM" : project.id === "caffeine-engine" ? "CE" :
                    project.id === "gam300" ? "EV" : project.id === "seam-carving" ? "SC" : project.id === "python-3d-vision" ? "CV" :
                    project.id === "cprex" ? "CPR" : project.id === "community-cabinet" ? "IoT" : project.id === "folding-cabinet-table" ? "E262" : project.id === "quiknom" ? "QN" : project.id === "ekosafe" ? "EKO" : project.id === "vulkan-renderer" ? "VK" : "GAM"}
                 </div>

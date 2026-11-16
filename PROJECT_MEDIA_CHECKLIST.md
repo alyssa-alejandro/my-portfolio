@@ -70,3 +70,21 @@ Use landscape 16:9 covers where possible, and keep UI text readable. Capture rea
 - Out of Memory remains under Game Development: selected game VFX only. Confirmed effects: door particles, transitions, and player particles.
 - Record separate engine-system and game-VFX demonstrations. A scene may appear in both if captions distinguish engine infrastructure from effects and credit shared assets.
 
+
+## Confirmed available media plan
+
+This list supersedes earlier optional capture suggestions. Report images are sufficient for hardware, product design, and entrepreneurship; videos are not required for those entries.
+
+| Project | YouTube videos | Images |
+| --- | --- | --- |
+| GAM100 — Chai & Chain | Trailer | Both players with chain; ingredient-list UI |
+| GAM150 — Viral Invaders | Trailer | Gameplay cover; event spritesheet |
+| GAM200 — Caffeine Engine | Contribution video; editor demonstration | Engine/editor cover; lighting, camera, particles; submission checklist; playtest improvement list |
+| GAM250 — Out of Memory | Trailer | Gameplay cover; player particles; transition frames |
+| GAM300 — EV Fleet Simulator | Map scenario and login walkthrough, when ready | Map with vehicles/sites; login; scenario controls |
+| Python 3D Vision | Live detection demo | Detection; matching source/depth/point cloud; object markers only once aligned |
+| Seam Carving | No video required | Original/resized comparison; energy maps and seam overlays; CMake/vcpkg setup, when ready |
+| Hardware and product design | No videos required | Existing report photos, CAD views, diagrams, and interface screenshots |
+| Entrepreneurship | No videos required | Existing report/mockup images and relevant planning diagrams |
+
+Crop report images to readable figures rather than shrinking entire pages. Retain team/reference credits and remove student IDs, account information, and API keys. Do not fabricate a missing photo or imply an unbuilt concept is a physical prototype. For CPRex, use only materials actually available; the cabinet report does not supply CPRex photos.

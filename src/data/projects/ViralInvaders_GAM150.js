@@ -18,7 +18,7 @@ const project = {
     takeaway: 'I gained experience building reusable C++ systems and connecting gameplay state to readable visual feedback, from an animation frame to a unit’s health display.',
   },
   media: [
-    { kind: 'Video', title: 'Gameplay trailer', brief: 'Add the existing trailer or a short gameplay cut showing virus deployment, a wave of combat, and an environmental event.' },
+    { kind: 'Video', title: 'Gameplay trailer', youtubeId: 'Np6g_sM933o', brief: 'Team gameplay trailer for Viral Invaders.' },
     { kind: 'Image', title: 'Nine-frame event spritesheet', brief: 'Show one complete hand-drawn event spritesheet with frames numbered 1–9. Name the event and identify the artwork and animation system as your contributions.' },
     { kind: 'Video', title: 'Health bars and event effects', brief: 'Record 10–20 seconds of a unit taking damage and its health bar updating, followed by one of the two events you implemented. Caption the attribute changes actually shown.' },
   ],

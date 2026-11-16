@@ -24,7 +24,8 @@ const project = {
     takeaway: 'I learned that supporting a team involves more than completing my own code: communicating build problems, helping blocked teammates, and keeping deliverables organised all matter. The project combined custom OpenGL engine development with practical experience coordinating shared work.',
   },
   media: [
-    { kind: 'Video', title: 'My contribution video', brief: 'Add your existing contribution video. Use captions or timestamps to identify your rendering, camera, lighting, and window-management work where shown. Separate engine systems from the door/player particles and transitions covered in Out of Memory, and credit shared team assets.' },
+    { kind: 'Video', title: 'My contribution video', youtubeId: 'icwPeipj3DU', brief: 'My contribution video for Caffeine Engine.' },
+    { kind: 'Video', title: 'Game editor demonstration', youtubeId: 'yo9KOp4WQIY', brief: 'A demonstration of the team’s game editor, showing more of the systems I worked on.' },
     { kind: 'Image', title: 'Rendering and camera breakdown', brief: 'Annotate a scene or diagram to explain the rendering and camera flow. Use source excerpts only where authorship is confirmed; do not invent pipeline stages.' },
     { kind: 'Image', title: 'Team coordination and deliverables', brief: 'Show a readable excerpt of your submission checklist, naming convention, progress tracking, or playtest improvement list. Explain how you used it to coordinate the team. Remove private teammate details and label proposed game changes separately from completed ones.' },
     { kind: 'Image', title: 'Lighting or display handling', brief: 'Show a documented lighting example or matching captures at different resolutions. Explain the actual implementation or issue you addressed without claiming unsupported performance results.' },

@@ -19,7 +19,7 @@ const project = {
     takeaway: 'This project introduced me to collaborative C game development, gameplay and UI implementation, and balancing programming contributions with project leadership.',
   },
   media: [
-    { kind: 'Video', title: 'Promotional trailer', brief: 'Add the trailer you created. Show an ingredient throw, the chain limiting movement, and a completed order. Credit trailer editing separately from team gameplay work.' },
+    { kind: 'Video', title: 'Promotional trailer', youtubeId: 'zWDvvzZvKeo', brief: 'The promotional trailer I created for Chai & Chain.' },
     { kind: 'Image', title: 'Ingredient list UI', brief: 'Capture the ingredient names and corresponding images at a readable size. Include the recipe or order context and annotate the display you worked on.' },
     { kind: 'Video', title: 'Recipe variation and movement', brief: 'Show two different recipe selections and a short movement sequence. Use captions to distinguish your contributions from the team’s chain and throwing mechanics.' },
   ],

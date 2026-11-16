@@ -19,7 +19,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === 'Escape') onClose();
       if (event.key !== 'Tab') return;
-      const elements = dialog.current?.querySelectorAll<HTMLElement>('button, a[href]');
+      const elements = dialog.current?.querySelectorAll<HTMLElement>('button, a[href], iframe');
       if (!elements?.length) return;
       const first = elements[0];
       const last = elements[elements.length - 1];
@@ -68,9 +68,26 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
         <div className="project-modal-section"><h3>Tools & technologies</h3><p>{project.technologies}</p></div>
         <div className="project-modal-section"><h3>Project media</h3>
           <div className="project-media-grid">{project.media.map((media, index) => (
-            <figure className="media-placeholder" key={media.title}>
-              <span className="eyebrow">{media.kind} placeholder / {String(index + 1).padStart(2, '0')}</span>
-              <h4>{media.title}</h4><figcaption>{media.brief}</figcaption>
+            <figure className={media.youtubeId ? 'project-video' : 'media-placeholder'} key={media.title}>
+              {media.youtubeId ? (
+                <>
+                  <h4>{media.title}</h4>
+                  <iframe
+                    src={`https://www.youtube-nocookie.com/embed/${media.youtubeId}`}
+                    title={`${project.title} — ${media.title}`}
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                  />
+                  <figcaption>{media.brief} <a href={`https://youtu.be/${media.youtubeId}`} target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a></figcaption>
+                </>
+              ) : (
+                <>
+                  <span className="eyebrow">{media.kind} placeholder / {String(index + 1).padStart(2, '0')}</span>
+                  <h4>{media.title}</h4><figcaption>{media.brief}</figcaption>
+                </>
+              )}
             </figure>
           ))}</div>
         </div>

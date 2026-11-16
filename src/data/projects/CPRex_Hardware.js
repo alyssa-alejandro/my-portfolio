@@ -19,7 +19,7 @@ const project = {
     takeaway: 'The project strengthened my ability to work across software and physical design while communicating an engineering idea in a business context. It helped shape my interest in building interactive systems with a clear purpose.',
   },
   media: [
-    { kind: 'Video', title: 'CPR practice demonstration', brief: 'Record 20–40 seconds of the prototype being used in a practice setup. Show the actual monitoring output and feedback response, and label what is measured. Describe it as a practice prototype; include only behaviour the device demonstrates.' },
+    { kind: 'Image', title: 'Practice prototype from the report', brief: 'Use an existing report photo showing the practice prototype or its feedback interface. Caption what is visible and confirm any measurement labels. A video is not required.' },
     { kind: 'Image', title: 'Embedded system breakdown', brief: 'Photograph the Arduino and connected components. Add labels for the actual inputs, processing, and feedback outputs. Confirm the sensor types and measurements before writing technical captions.' },
     { kind: 'Image', title: 'Fusion 360 design and prototype', brief: 'Place a Fusion 360 model beside the corresponding physical prototype. Explain which parts you designed and any documented design changes; use startup-approved material.' },
   ],

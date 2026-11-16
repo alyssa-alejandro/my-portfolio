@@ -8,7 +8,7 @@ import pythonVision from './Python3DVision_Personal.js';
 import cprex from './CPRex_Hardware.js';
 import communityCabinet from './SmartCommunityCabinet_FYP.js';
 import seamCarving from './SeamCarving_AlgorithmAnalysis.js';
-import project0 from './OutOfMemory_GAM200.js';
+import project0 from './OutOfMemory_GAM250.js';
 import project1 from './EvFleetSimulator_GAM300.js';
 import project2 from './ViralInvaders_GAM150.js';
 import project3 from './ChaiAndChain_GAM100.js';

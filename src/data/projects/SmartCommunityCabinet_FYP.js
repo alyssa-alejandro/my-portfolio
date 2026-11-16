@@ -19,7 +19,7 @@ const project = {
     takeaway: 'The project taught me how much IoT development depends on integration, communication, and realistic scope. Our report identified limitations in inventory representation, expiry handling, and app validation, giving us concrete directions for improving the prototype.',
   },
   media: [
-    { kind: 'Video', title: 'Cabinet interaction walkthrough', brief: 'Show the actual prototype workflow: barcode entry, item information, and cabinet locking/unlocking. Caption which steps were implemented and identify your database/hardware role separately from the team’s GUI and mobile app.' },
+    { kind: 'Image', title: 'Cabinet workflow from the report', brief: 'Use cropped report photos and interface screenshots to show barcode entry, item records, and cabinet locking. Caption your shared database/hardware work separately from the team’s GUI and mobile app. No video is needed.' },
     { kind: 'Image', title: 'System architecture', brief: 'Diagram the Raspberry Pi, scanner, local interface, ThingSpeak, mobile app, and relay/solenoid connections according to the report. Highlight your shared database and hardware responsibilities.' },
     { kind: 'Image', title: 'Lock and data integration', brief: 'Pair a close-up of the relay/solenoid assembly with an example of the corresponding item records. Report figures 5.1.1 and section 4.1.1 can guide selection. Remove API keys and personal account information from screenshots.' },
   ],
