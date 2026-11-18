@@ -8,7 +8,9 @@ const project = {
   description: 'A C++ content-aware image resizing project comparing greedy and graph-cut seam selection, with an OpenCV-based image-processing pipeline.',
   role: 'Project Setup & Task Coordination', team: 'Algorithm Analysis project group', status: 'In development',
   technologies: 'C++17 · OpenCV · CMake · vcpkg · Ninja · Visual Studio',
-  cover: 'Show the original image beside resized outputs from the greedy and graph-cut methods. Label each method and the image dimensions.',
+  cover: 'Seam Carving interface showing graph-cut seam selection on a castle image.',
+  coverImage: '/images/works/seam%20carving/sc_cover.png',
+  coverAlt: 'Seam Carving interface with width, height, and method controls above a castle image and a red vertical seam.',
   overview: 'This algorithm analysis group project explores content-aware image resizing through seam carving. The program calculates a Sobel-based energy map, removes seams, and produces resized images and seam overlays. The current team implementation runs greedy and graph-cut methods and reports timing and seam-cost measurements for comparison. My focus was organising the initial tasks and establishing the project’s build and dependency setup.',
   contributions: [
     'Task coordination — Split the project work into tasks so the group could develop different parts of the application.',
@@ -22,9 +24,10 @@ const project = {
     takeaway: 'I gained experience preparing a C++ project for group development: managing build configuration and dependencies while dividing implementation work into tasks. The team’s algorithm comparison provides a practical setting for examining runtime and image-quality trade-offs.',
   },
   media: [
+    { kind: 'Image', title: 'Graph-cut seam visualisation', src: '/images/works/seam%20carving/sc_cover.png', alt: 'A red seam highlighted on a castle image during graph-cut resizing, with dimension and method controls.', brief: 'The team’s seam-carving application showing a selected vertical seam. My contributions focused on task coordination and the CMake/OpenCV build setup.' },
     { kind: 'Image', title: 'Energy map and seam overlays', brief: 'Arrange the original image, energy.png, greedy_seams.png, and graphcut_seams.png in a labeled grid. Explain that these are team outputs; highlight your build and integration contribution separately.' },
     { kind: 'Image', title: 'CMake and dependency setup', brief: 'Show concise excerpts from CMakeLists.txt, CMakePresets.json, and vcpkg.json. Annotate C++17, OpenCV linking, source discovery, and asset copying. Omit personal filesystem paths.' },
-    { kind: 'Video', title: 'Build and comparison walkthrough', brief: 'Record configuring/building with the Windows preset, running seam_carving, and opening the resized outputs. Show the measured timing table with the input size, seam count, build configuration, and machine details. Use actual results rather than estimated performance claims.' },
+    { kind: 'Video', title: 'Seam Carving demonstration', youtubeId: '5PF4sBr0Rzo', brief: 'Video demonstration of the team’s Seam Carving project.' },
   ],
 };
 
