@@ -33,10 +33,11 @@ export default function Home() {
   return (
     <div className="personal-home">
       <section className="personal-intro" aria-labelledby="home-title">
-        <p className="personal-kicker">ALYSSA NICOLE ALEJANDRO</p>
-        <h1 id="home-title">Hi, I'm Alyssa.<br /><span>I like figuring out<br className="intro-break" /> how things work.</span></h1>
         <div className="personal-intro-bottom">
           <div className="personal-intro-copy">
+        <p className="personal-kicker">ALYSSA NICOLE ALEJANDRO</p>
+        <h1 id="home-title">Hi, I'm Alyssa.<br /><span>I like figuring out<br className="intro-break" /> how things work.</span></h1>
+
             <p>I'm a computer science student at SIT–DigiPen, graduating in 2028. My projects span software development, games, computer vision, and hardware prototyping.</p>
             <p>I've gone from building a CPR practice device to working on a custom game engine. I enjoy the part where an idea becomes something I can test, take apart, and improve.</p>
             <Link to="/work" className="personal-link">See my projects <span aria-hidden="true">↗</span></Link>
