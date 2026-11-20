@@ -21,10 +21,6 @@ function Navbar() {
         <NavLink to="/journal">Journal</NavLink>
         <NavLink to="/contact">Contact</NavLink>
       </nav>
-
-      <a href="/resume.pdf" className="resume-link">
-        Resume ↗
-      </a>
     </header>
   );
 }
